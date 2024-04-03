@@ -1,0 +1,1892 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300;400;500;600;700&family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600;700&family=Kiwi+Maru:wght@400;500&display=swap");
+@font-face {
+  font-family: "SOURCEHANSANSJP-BOLD";
+  src: url(../fonts/SOURCEHANSANSJP-BOLD_0.OTF);
+}
+@font-face {
+  font-family: "SOURCEHANSANSJP-MEDIUM";
+  src: url(../fonts/SOURCEHANSANSJP-MEDIUM_0.OTF);
+}
+@font-face {
+  font-family: "SOURCEHANSANSJP-NORMAL";
+  src: url(../fonts/SOURCEHANSANSJP-NORMAL_0.OTF);
+}
+.l-common {
+  width: 1480px;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .l-common {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.is-sp {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .is-sp {
+    display: block;
+  }
+}
+
+.is-pc {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .is-pc {
+    display: none;
+  }
+}
+
+/**
+* @file _reset.scss
+**/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+  background: #FAFAF8;
+}
+@media screen and (max-width: 768px) {
+  body {
+    min-width: unset;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #FAFAF8;
+  font-family: "A P-OTF UD Shin Go Pr6N";
+}
+
+*::-moz-selection {
+  background: #333;
+  color: white;
+}
+
+*::selection {
+  background: #333;
+  color: white;
+}
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(248, 248, 249, 0.3);
+  background-color: #F5F5F5;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #333;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before, blockquote::after,
+q::before,
+q::after {
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background: none;
+}
+
+input[type=submit],
+input[type=button] {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+input[type=submit]::-webkit-search-decoration,
+input[type=button]::-webkit-search-decoration {
+  display: none;
+}
+input[type=submit]:focus,
+input[type=button]:focus {
+  outline-offset: -2px;
+}
+
+input,
+textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+table td,
+table th {
+  padding: 0;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  line-height: 0;
+  vertical-align: bottom;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border: 0;
+}
+
+input:focus {
+  outline: 0;
+}
+
+hr {
+  margin: 1.5em 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+}
+
+* {
+  padding: 0;
+  line-height: 1;
+}
+
+td,
+th,
+tr {
+  vertical-align: middle;
+}
+
+*,
+dd,
+dl,
+dt,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+ol,
+picture,
+table,
+ul {
+  margin: 0;
+}
+
+ol,
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+fieldset,
+legend {
+  padding: 0;
+}
+
+label,
+legend {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+fieldset {
+  margin: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+[type=radio]:checked,
+[type=radio]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+[type=checkbox]:checked,
+[type=checkbox]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+[type=radio]:checked + label,
+[type=radio]:not(:checked) + label {
+  position: relative;
+  padding-left: 34px;
+  cursor: pointer;
+  line-height: 26px;
+  display: inline-block;
+  color: #111;
+  margin-bottom: 0;
+}
+
+[type=radio]:checked + label:before,
+[type=radio]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #111;
+  border-radius: 100%;
+  background: #fff;
+}
+
+[type=radio]:checked + label:after,
+[type=radio]:not(:checked) + label:after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #111;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  transition: all 0.2s ease;
+}
+
+[type=radio]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+[type=radio]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label:has([type=radio]:checked),
+label:has([type=radio]:not(:checked)) {
+  position: relative;
+  padding-left: 34px;
+  cursor: pointer;
+  line-height: 26px;
+  display: inline-block;
+  color: #111;
+  margin-bottom: 0;
+}
+
+label:has([type=radio]:checked)::before,
+label:has([type=radio]:not(:checked))::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #111;
+  border-radius: 100%;
+  background: #fff;
+}
+
+label:has([type=radio]:checked)::after,
+label:has([type=radio]:not(:checked))::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #111;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  transition: all 0.2s ease;
+}
+
+label:has([type=radio]:not(:checked))::after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+label:has([type=radio]:checked)::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.c-header {
+  height: 72px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  z-index: 9000;
+}
+@media screen and (max-width: 768px) {
+  .c-header {
+    height: 64px;
+  }
+}
+.c-header__logo h1 a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+@media screen and (max-width: 768px) {
+  .c-header__logo h1 a {
+    display: flex;
+    align-items: center;
+  }
+  .c-header__logo h1 a img {
+    width: 180px;
+  }
+}
+.c-header__btns {
+  display: flex;
+}
+.c-header__menu {
+  background-color: #E31A3C;
+  color: #F8F8F8;
+  font-family: A P-OTF UD Shin Go Pr6N;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  text-align: left;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding: 29px 24px;
+}
+@media screen and (max-width: 768px) {
+  .c-header__menu {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 26px 16px;
+    max-height: 64px;
+  }
+}
+.c-header .hamBtn {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .c-header .hamBtn {
+    width: 64px;
+  }
+}
+.c-header .hamBtn input {
+  display: none;
+}
+.c-header .hamBtn .bar {
+  display: block;
+  position: relative;
+  width: 32px;
+  height: 14.67px;
+}
+.c-header .hamBtn .bar:hover span {
+  background: white;
+}
+.c-header .hamBtn .bar span {
+  position: absolute;
+  width: 32px;
+  height: 1.33px;
+  background: #F8F8F8;
+  border-radius: 100px;
+  display: inline-block;
+  transition: 0.3s ease;
+  left: 0;
+}
+.c-header .hamBtn .bar span.top {
+  top: 0;
+}
+.c-header .hamBtn .bar span.middle {
+  top: 7px;
+}
+.c-header .hamBtn .bar span.bottom {
+  bottom: 0;
+}
+.c-header .hamBtn input[type]:checked ~ span.top {
+  transform: rotate(25deg);
+  transform-origin: top left;
+  width: 32px;
+  left: 0px;
+}
+.c-header .hamBtn input[type]:checked ~ span.bottom {
+  transform: rotate(-25deg);
+  transform-origin: top left;
+  width: 32px;
+  bottom: 0px;
+}
+.c-header .hamBtn input[type]:checked ~ span.middle {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+.hamburger__menus {
+  position: fixed;
+  display: flex;
+  top: 72px;
+  right: 0;
+  height: calc(100vh - 72px);
+  width: 100%;
+  overflow-y: auto;
+  z-index: 10;
+  background-color: white;
+  transform: translateX(100%);
+  transition: all 0.35s ease;
+}
+@media screen and (max-width: 768px) {
+  .hamburger__menus {
+    top: 64px;
+    height: calc(100vh - 64px);
+  }
+}
+.hamburger__menus.is-active {
+  transform: translateX(0);
+}
+.hamburger__menus figure {
+  width: 30%;
+  height: calc(100vh - 72px);
+}
+@media screen and (max-width: 768px) {
+  .hamburger__menus figure {
+    display: none;
+  }
+}
+.hamburger__menus figure img {
+  height: calc(100vh - 72px);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hamburger__menus .hamburger__menus--container {
+  width: 70%;
+  background-color: #222222;
+  color: #F8F8F8;
+  overflow: auto;
+  padding-bottom: 64px;
+}
+@media screen and (max-width: 768px) {
+  .hamburger__menus .hamburger__menus--container {
+    width: 100%;
+  }
+}
+.hamburger__menus .hamburger__menus--container ul {
+  padding: 88px 160px 80px 80px;
+}
+@media screen and (max-width: 768px) {
+  .hamburger__menus .hamburger__menus--container ul {
+    padding: 40px 32px;
+  }
+}
+.hamburger__menus .hamburger__menus--container ul li {
+  border-bottom: 1px solid rgba(248, 248, 248, 0.3);
+}
+.hamburger__menus .hamburger__menus--container ul li a {
+  color: #F8F8F8;
+  padding: 20px 0;
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+.hamburger__menus .hamburger__menus--container ul li a:hover {
+  background: rgba(248, 248, 248, 0.3);
+}
+.hamburger__menus .hamburger__menus--container .f-menus__first {
+  display: flex;
+  gap: 20px;
+  padding-left: 80px;
+}
+@media screen and (max-width: 768px) {
+  .hamburger__menus .hamburger__menus--container .f-menus__first {
+    flex-direction: column;
+    padding-left: 32px;
+  }
+}
+.hamburger__menus .hamburger__menus--container .f-menus__first a {
+  color: #F8F8F8;
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  transition: 0.3s;
+}
+.hamburger__menus .hamburger__menus--container .f-menus__second {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 160px 0px 80px;
+  align-items: baseline;
+}
+@media screen and (max-width: 768px) {
+  .hamburger__menus .hamburger__menus--container .f-menus__second {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+.hamburger__menus .hamburger__menus--container .f-menus__second span {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+
+.c-footer {
+  background-color: #111;
+  position: relative;
+}
+.c-footer .p-reservation {
+  position: relative;
+}
+.c-footer .p-reservation img {
+  height: 416px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .c-footer .p-reservation img {
+    height: 375px;
+  }
+}
+.c-footer .p-reservation__container {
+  position: absolute;
+  left: 6%;
+  top: 35%;
+  display: flex;
+  justify-content: space-between;
+  width: 88%;
+}
+.c-footer .p-reservation__container h2 {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #F8F8F8;
+}
+@media screen and (max-width: 768px) {
+  .c-footer .p-reservation__container h2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-align: left;
+  }
+}
+.c-footer .p-reservation__container h2 small {
+  display: block;
+  padding-top: 16px;
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: rgba(248, 248, 248, 0.8);
+}
+@media screen and (max-width: 768px) {
+  .c-footer .p-reservation__container h2 small {
+    font-size: 12px;
+  }
+}
+.c-footer .p-reservation__container .link {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.c-footer .p-reservation__container .link label {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.1em;
+  text-align: right;
+  color: #F8F8F8;
+}
+@media screen and (max-width: 768px) {
+  .c-footer .p-reservation__container .link label {
+    display: none;
+  }
+}
+.c-footer__container {
+  padding: 80px 104px;
+}
+@media screen and (max-width: 1200px) {
+  .c-footer__container {
+    padding: 40px 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .c-footer__container {
+    padding: 40px 30px;
+  }
+}
+.c-footer__upper {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .c-footer__upper {
+    display: block;
+  }
+}
+.c-footer__upper--right .to__top {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.c-footer__upper--right .to__top #to-top {
+  cursor: pointer;
+}
+.c-footer__upper--right .footer__menu {
+  padding-top: 91.7px;
+  display: flex;
+  gap: 80px;
+}
+@media screen and (max-width: 1500px) {
+  .c-footer__upper--right .footer__menu {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .c-footer__upper--right .footer__menu {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .c-footer__upper--right .footer__menu {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.c-footer__upper--right .footer__menu--first, .c-footer__upper--right .footer__menu--second {
+  width: 168px;
+  border-right: 1px solid rgba(248, 248, 248, 0.3);
+}
+@media screen and (max-width: 1200px) {
+  .c-footer__upper--right .footer__menu--first, .c-footer__upper--right .footer__menu--second {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .c-footer__upper--right .footer__menu--first, .c-footer__upper--right .footer__menu--second {
+    width: 100%;
+    border: none;
+  }
+}
+.c-footer__upper--right .footer__menu--first li, .c-footer__upper--right .footer__menu--second li {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .c-footer__upper--right .footer__menu--first li, .c-footer__upper--right .footer__menu--second li {
+    margin-bottom: 0;
+    padding: 0;
+    border-bottom: 1px solid rgba(248, 248, 248, 0.3);
+  }
+}
+.c-footer__upper--right .footer__menu--first li a, .c-footer__upper--right .footer__menu--second li a {
+  color: #F8F8F8;
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .c-footer__upper--right .footer__menu--first li a, .c-footer__upper--right .footer__menu--second li a {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+}
+.c-footer__upper--right .footer__menu--first li:last-child, .c-footer__upper--right .footer__menu--second li:last-child {
+  margin-bottom: 0px;
+}
+.c-footer__upper--right .footer__menu--last {
+  position: relative;
+  width: 170px;
+}
+@media screen and (max-width: 768px) {
+  .c-footer__upper--right .footer__menu--last {
+    padding-top: 32px;
+  }
+}
+.c-footer__upper--right .footer__menu--last ul {
+  position: absolute;
+  bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .c-footer__upper--right .footer__menu--last ul {
+    position: relative;
+  }
+}
+.c-footer__upper--right .footer__menu--last ul li {
+  margin-bottom: 40px;
+}
+.c-footer__upper--right .footer__menu--last ul li a {
+  color: rgba(248, 248, 248, 0.8);
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+.c-footer__upper--right .footer__menu--last ul li:last-child {
+  margin-bottom: 0px;
+}
+.c-footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+.c-footer__bottom span {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #F8F8F8;
+}
+
+.pc-only {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .pc-only {
+    display: none !important;
+  }
+}
+
+.sp-only {
+  display: none !important;
+}
+@media screen and (max-width: 768px) {
+  .sp-only {
+    display: block !important;
+  }
+}
+
+#top .p-fv {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+#top .p-fv__container {
+  position: relative;
+  width: 100%;
+}
+#top .p-fv__upper {
+  position: relative;
+}
+#top .p-fv__upper img {
+  width: 100%;
+  height: 430px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  #top .p-fv__upper img {
+    height: 322px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+#top .p-fv__upper h1 {
+  position: absolute;
+  top: 40%;
+  left: 120px;
+  font-family: A-OTF Ryumin Pr6N;
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 72.8px;
+  letter-spacing: 0.15em;
+  text-align: left;
+  color: #CCB77F;
+}
+@media screen and (max-width: 768px) {
+  #top .p-fv__upper h1 {
+    font-family: "A P-OTF UD Shin Go Pr6N";
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 30.8px;
+    letter-spacing: 0.15em;
+    text-align: left;
+    writing-mode: vertical-lr;
+    top: 20%;
+    left: 6.4vw;
+  }
+}
+#top .p-fv__upper h1 span {
+  color: #f8f8f8;
+}
+#top .p-fv__middle {
+  background-color: #01250B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#top .p-fv__middle--content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+#top .p-fv__bottom {
+  position: relative;
+}
+#top .p-fv__bottom img {
+  width: 100%;
+  height: 430px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  #top .p-fv__bottom img {
+    height: 322px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+#top .p-fv__bottom h1 {
+  font-family: A-OTF Ryumin Pr6N;
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 72.8px;
+  letter-spacing: 0.15em;
+  position: absolute;
+  right: 120px;
+  top: 40%;
+  color: #CCB77F;
+}
+@media screen and (max-width: 768px) {
+  #top .p-fv__bottom h1 {
+    font-family: "A P-OTF UD Shin Go Pr6N";
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 30.8px;
+    letter-spacing: 0.15em;
+    text-align: left;
+    writing-mode: vertical-lr;
+    top: 15%;
+    right: 6.4vw;
+  }
+}
+#top .p-fv__bottom h1 span {
+  color: white;
+}
+#top .p-aboutus {
+  position: relative;
+  height: 800px;
+}
+@media screen and (max-width: 768px) {
+  #top .p-aboutus {
+    height: 748px;
+  }
+}
+#top .p-aboutus img {
+  width: 100%;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  #top .p-aboutus img {
+    height: 748px;
+  }
+}
+#top .p-aboutus .img-cover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 800px;
+  opacity: 0.4;
+  background: #000;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  #top .p-aboutus .img-cover {
+    height: 748px;
+    opacity: 0.6;
+  }
+}
+#top .p-aboutus__container {
+  position: absolute;
+  z-index: 2;
+  top: 213px;
+  width: 800px;
+  left: calc(50% - 400px);
+  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  #top .p-aboutus__container {
+    width: 700px;
+    left: calc(50% - 350px);
+  }
+}
+@media screen and (max-width: 768px) {
+  #top .p-aboutus__container {
+    top: 144px;
+    width: 311px;
+    left: calc(50% - 150px);
+  }
+}
+#top .p-aboutus__container h2 {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #f8f8f8;
+}
+@media screen and (max-width: 768px) {
+  #top .p-aboutus__container h2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+  }
+}
+#top .p-aboutus__container h2 small {
+  display: block;
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #FF2222;
+  padding-top: 16px;
+}
+@media screen and (max-width: 768px) {
+  #top .p-aboutus__container h2 small {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+  }
+}
+#top .p-aboutus__container h3 {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #fff;
+  padding-top: 56px;
+  white-space: nowrap;
+}
+@media screen and (max-width: 1200px) {
+  #top .p-aboutus__container h3 {
+    white-space: unset;
+  }
+}
+@media screen and (max-width: 768px) {
+  #top .p-aboutus__container h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+}
+#top .p-aboutus__container p {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #fff;
+  padding-top: 32px;
+}
+@media screen and (max-width: 768px) {
+  #top .p-aboutus__container p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.8px;
+    letter-spacing: 0.1em;
+  }
+}
+#top .p-aboutus__container a {
+  display: flex;
+  width: 180px;
+  height: 40px;
+  margin: 56px auto;
+  border: 1px solid rgba(248, 248, 248, 0.3);
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+}
+#top .p-aboutus__container a span {
+  color: white;
+  padding-right: 10px;
+}
+#top .p-facility, #top .p-booth, #top .p-price {
+  width: 100%;
+  height: 800px;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  #top .p-facility, #top .p-booth, #top .p-price {
+    flex-direction: column;
+    height: auto;
+  }
+}
+#top .p-facility__left, #top .p-booth__left, #top .p-price__left {
+  width: 66%;
+  position: relative;
+}
+@media screen and (max-width: 1200px) {
+  #top .p-facility__left, #top .p-booth__left, #top .p-price__left {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #top .p-facility__left, #top .p-booth__left, #top .p-price__left {
+    width: 100%;
+    height: 313px;
+  }
+}
+#top .p-facility__left img, #top .p-booth__left img, #top .p-price__left img {
+  width: 100%;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  #top .p-facility__left img, #top .p-booth__left img, #top .p-price__left img {
+    height: 313px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+#top .p-facility__right, #top .p-booth__right, #top .p-price__right {
+  width: 34%;
+  background-color: #111111;
+}
+@media screen and (max-width: 1200px) {
+  #top .p-facility__right, #top .p-booth__right, #top .p-price__right {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #top .p-facility__right, #top .p-booth__right, #top .p-price__right {
+    width: 100%;
+    height: 408px;
+  }
+}
+#top .p-facility__right--container, #top .p-booth__right--container, #top .p-price__right--container {
+  width: 272px;
+  margin: 200px auto 0;
+}
+@media screen and (max-width: 768px) {
+  #top .p-facility__right--container, #top .p-booth__right--container, #top .p-price__right--container {
+    margin-top: 56px;
+    width: 311px;
+  }
+}
+#top .p-facility__right--container h2, #top .p-booth__right--container h2, #top .p-price__right--container h2 {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #F8F8F8;
+  text-align: left;
+}
+#top .p-facility__right--container h2 small, #top .p-booth__right--container h2 small, #top .p-price__right--container h2 small {
+  display: block;
+  padding-top: 16px;
+  color: #FF2222;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+#top .p-facility__right--container p, #top .p-booth__right--container p, #top .p-price__right--container p {
+  padding-top: 48px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #F8F8F8;
+}
+#top .p-facility__right--container a, #top .p-booth__right--container a, #top .p-price__right--container a {
+  display: flex;
+  width: 180px;
+  height: 40px;
+  margin: 56px 0;
+  border: 1px solid rgba(248, 248, 248, 0.3);
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+}
+#top .p-facility__right--container a span, #top .p-booth__right--container a span, #top .p-price__right--container a span {
+  color: white;
+  padding-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  #top .p-booth {
+    flex-direction: column-reverse !important;
+  }
+}
+#top .p-flow-beginner {
+  display: flex;
+  width: 100%;
+  height: 560px;
+}
+@media screen and (max-width: 768px) {
+  #top .p-flow-beginner {
+    flex-direction: column;
+    height: auto;
+  }
+}
+#top .p-flow-beginner__left, #top .p-flow-beginner__right {
+  position: relative;
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  #top .p-flow-beginner__left, #top .p-flow-beginner__right {
+    width: 100%;
+  }
+}
+#top .p-flow-beginner__left img, #top .p-flow-beginner__right img {
+  width: 100%;
+  height: 560px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  #top .p-flow-beginner__left img, #top .p-flow-beginner__right img {
+    height: 260px;
+  }
+}
+#top .p-flow-beginner__left .flow-content, #top .p-flow-beginner__left .beginner-content, #top .p-flow-beginner__right .flow-content, #top .p-flow-beginner__right .beginner-content {
+  width: 67%;
+  position: absolute;
+  left: 16%;
+  top: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  #top .p-flow-beginner__left .flow-content, #top .p-flow-beginner__left .beginner-content, #top .p-flow-beginner__right .flow-content, #top .p-flow-beginner__right .beginner-content {
+    left: 32px;
+    width: calc(100% - 64px);
+  }
+}
+#top .p-flow-beginner__left .flow-content h2, #top .p-flow-beginner__left .beginner-content h2, #top .p-flow-beginner__right .flow-content h2, #top .p-flow-beginner__right .beginner-content h2 {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #F8F8F8;
+}
+#top .p-flow-beginner__left .flow-content h2 small, #top .p-flow-beginner__left .beginner-content h2 small, #top .p-flow-beginner__right .flow-content h2 small, #top .p-flow-beginner__right .beginner-content h2 small {
+  display: block;
+  padding-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #FF2222;
+}
+#top .p-flow-beginner__left .flow-content a, #top .p-flow-beginner__left .beginner-content a, #top .p-flow-beginner__right .flow-content a, #top .p-flow-beginner__right .beginner-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 1px solid rgba(248, 248, 248, 0.3);
+  width: 96px;
+  height: 96px;
+}
+@media screen and (max-width: 1080px) {
+  #top .p-flow-beginner__left .flow-content a, #top .p-flow-beginner__left .beginner-content a, #top .p-flow-beginner__right .flow-content a, #top .p-flow-beginner__right .beginner-content a {
+    width: 72px;
+    height: 72px;
+  }
+}
+#top .p-news {
+  padding: 240px 160px;
+  background-color: #111;
+}
+@media screen and (max-width: 1200px) {
+  #top .p-news {
+    padding: 240px 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #top .p-news {
+    padding: 120px 32px;
+  }
+}
+#top .p-news__container {
+  width: 100%;
+  text-align: left;
+}
+#top .p-news__container h2 {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #F8F8F8;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+}
+#top .p-news__container h2 small {
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #FF2222;
+}
+#top .p-news__container ul {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  #top .p-news__container ul {
+    flex-direction: column;
+  }
+}
+#top .p-news__container ul li img {
+  height: 258px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#top .p-news__container ul li span {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  padding-top: 16px;
+  display: block;
+  color: #999999;
+}
+#top .p-news__container ul li h3 {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  padding-top: 16px;
+  color: #DDDDDD;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#top .p-news__container ul li p {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  padding-top: 16px;
+  color: #999999;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#top .p-news__container ul li a {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #DDDDDD;
+  margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  #top .p-news__container ul li a {
+    float: right;
+  }
+}
+#top .p-news__container ul li a .after {
+  margin-left: 12px;
+}
+#top .p-news__container .view-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px auto 0;
+  width: 215px;
+  height: 48px;
+  color: #F8F8F8;
+  border: 1px solid rgba(248, 248, 248, 0.3);
+  border-radius: 50px;
+}
+#top .p-news__container .view-more .after {
+  margin-left: 16px;
+}
+#top .p-access-faq {
+  background-color: #333333;
+  height: 256px;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  #top .p-access-faq {
+    flex-direction: column;
+    height: auto;
+  }
+}
+#top .p-access-faq__access, #top .p-access-faq__faq {
+  width: 50%;
+  display: flex;
+  padding: 88px 80px;
+  border: 1px solid rgba(221, 221, 221, 0.2);
+  justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+  #top .p-access-faq__access, #top .p-access-faq__faq {
+    padding: 88px 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #top .p-access-faq__access, #top .p-access-faq__faq {
+    width: 100%;
+  }
+}
+#top .p-access-faq__access .access-title, #top .p-access-faq__access .faq-title, #top .p-access-faq__faq .access-title, #top .p-access-faq__faq .faq-title {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+@media screen and (max-width: 768px) {
+  #top .p-access-faq__access .access-title, #top .p-access-faq__access .faq-title, #top .p-access-faq__faq .access-title, #top .p-access-faq__faq .faq-title {
+    gap: 24px;
+  }
+}
+#top .p-access-faq__access .access-title h2, #top .p-access-faq__access .faq-title h2, #top .p-access-faq__faq .access-title h2, #top .p-access-faq__faq .faq-title h2 {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #F8F8F8;
+}
+@media screen and (max-width: 768px) {
+  #top .p-access-faq__access .access-title h2, #top .p-access-faq__access .faq-title h2, #top .p-access-faq__faq .access-title h2, #top .p-access-faq__faq .faq-title h2 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+#top .p-access-faq__access .access-title h2 small, #top .p-access-faq__access .faq-title h2 small, #top .p-access-faq__faq .access-title h2 small, #top .p-access-faq__faq .faq-title h2 small {
+  display: block;
+  padding-top: 16px;
+  color: rgba(248, 248, 248, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  #top .p-access-faq__access .access-title h2 small, #top .p-access-faq__access .faq-title h2 small, #top .p-access-faq__faq .access-title h2 small, #top .p-access-faq__faq .faq-title h2 small {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+#about-us__fv {
+  width: 100%;
+  height: 480px;
+  position: relative;
+}
+#about-us__fv img {
+  width: 100%;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#about-us__fv h1 {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  position: absolute;
+  top: 35%;
+  left: 8%;
+  color: #F8F8F8;
+}
+@media screen and (max-width: 768px) {
+  #about-us__fv h1 {
+    font-family: "A P-OTF UD Shin Go Pr6N";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+}
+#about-us__fv h1 small {
+  display: block;
+  padding-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: rgba(248, 248, 248, 0.8);
+}
+@media screen and (max-width: 768px) {
+  #about-us__fv h1 small {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+  }
+}
+#about-us__concept, #about-us__electricity {
+  background-color: #111111;
+  padding-top: 240px;
+  padding-bottom: 240px;
+}
+@media screen and (max-width: 768px) {
+  #about-us__concept, #about-us__electricity {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+#about-us__concept .content, #about-us__electricity .content {
+  display: flex;
+  width: calc(100% - 320px);
+  margin: auto;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+@media screen and (max-width: 1200px) {
+  #about-us__concept .content, #about-us__electricity .content {
+    width: calc(100% - 160px);
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-us__concept .content, #about-us__electricity .content {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+    gap: 24px;
+    padding-bottom: 24px;
+  }
+}
+#about-us__concept .content h2, #about-us__electricity .content h2 {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #fff;
+  padding-right: 32px;
+  width: 45%;
+}
+@media screen and (max-width: 1200px) {
+  #about-us__concept .content h2, #about-us__electricity .content h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-us__concept .content h2, #about-us__electricity .content h2 {
+    width: 100%;
+  }
+}
+#about-us__concept .content p, #about-us__electricity .content p {
+  width: 45%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: rgba(248, 248, 248, 0.8);
+}
+@media screen and (max-width: 768px) {
+  #about-us__concept .content p, #about-us__electricity .content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.8px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    width: 100%;
+  }
+}
+#about-us__concept img, #about-us__electricity img {
+  padding-left: 160px;
+  height: 560px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 1200px) {
+  #about-us__concept img, #about-us__electricity img {
+    padding-left: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-us__concept img, #about-us__electricity img {
+    padding-left: 32px;
+    height: 240px;
+  }
+}
+#about-us__concept .left, #about-us__electricity .left {
+  padding-left: 0 !important;
+  padding-right: 160px;
+  padding-bottom: 80px;
+}
+@media screen and (max-width: 1200px) {
+  #about-us__concept .left, #about-us__electricity .left {
+    padding-right: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-us__concept .left, #about-us__electricity .left {
+    padding-right: 32px;
+    padding-bottom: 40px;
+  }
+}
+#about-us__concept a, #about-us__electricity a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-align: right;
+  color: #F8F8F8;
+  padding: 16px 32px;
+  border: 1px solid rgba(248, 248, 248, 0.3);
+  border-radius: 50px;
+  margin-right: 160px;
+  float: right;
+}
+@media screen and (max-width: 1200px) {
+  #about-us__concept a, #about-us__electricity a {
+    margin-right: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-us__concept a, #about-us__electricity a {
+    margin-right: 32px;
+    float: unset;
+    margin: auto;
+  }
+}
+#about-us__concept a span, #about-us__electricity a span {
+  text-align: center;
+}
+#about-us__concept a svg, #about-us__electricity a svg {
+  margin-left: 12px;
+}
+#about-us__electricity {
+  background-color: #222 !important;
+}
+#about-us__feature {
+  background-color: #111111;
+  padding: 240px 160px;
+}
+@media screen and (max-width: 1200px) {
+  #about-us__feature {
+    padding: 240px 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-us__feature {
+    padding: 120px 32px;
+  }
+}
+#about-us__feature h2 {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #DDDDDD;
+  display: block;
+  margin: auto;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+}
+#about-us__feature h2 small {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #FF2222;
+  display: block;
+  padding-top: 16px;
+}
+#about-us__feature ul {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+@media screen and (max-width: 768px) {
+  #about-us__feature ul {
+    gap: 56px;
+  }
+}
+#about-us__feature ul li {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  #about-us__feature ul li {
+    flex-direction: column-reverse;
+    padding-bottom: 0;
+  }
+}
+#about-us__feature ul li .feature-content {
+  padding: 102px 0;
+  width: 40%;
+}
+@media screen and (max-width: 768px) {
+  #about-us__feature ul li .feature-content {
+    width: 100%;
+    padding: 40px 0 0;
+  }
+}
+#about-us__feature ul li .feature-content h3 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #DDDDDD;
+}
+@media screen and (max-width: 768px) {
+  #about-us__feature ul li .feature-content h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.1em;
+    text-align: left;
+  }
+}
+#about-us__feature ul li .feature-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #DDDDDD;
+  padding-top: 32px;
+}
+@media screen and (max-width: 768px) {
+  #about-us__feature ul li .feature-content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.8px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #999999;
+  }
+}
+#about-us__feature ul li figure {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  #about-us__feature ul li figure {
+    width: 100%;
+  }
+}
+#about-us__feature ul li figure img {
+  width: 100%;
+  height: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  #about-us__feature ul li figure img {
+    height: 233.5px;
+  }
+}
+
+.arrow {
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(248, 248, 248, 0.3);
+  border-radius: 50px;
+  transition: 0.3s;
+  background: linear-gradient(90deg, rgba(248, 248, 248, 0.3) 50%, transparent 0);
+  background-position: 100% 100%;
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1080px) {
+  .arrow {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.arrow:hover {
+  background-position: 0 0;
+}
+
+.gray-arrow {
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+  border-radius: 50px;
+  transition: 0.3s;
+  background: linear-gradient(90deg, transparent 50%, #333 0);
+  background-position: 100% 100%;
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1080px) {
+  .gray-arrow {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.gray-arrow:hover {
+  background-position: 0 0;
+}
+
+.main-btn {
+  transition: 0.3s;
+  background: linear-gradient(90deg, rgba(248, 248, 248, 0.3) 50%, transparent 0);
+  background-position: 100% 100%;
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+}
+
+.main-btn:hover {
+  background-position: 0 0;
+}/*# sourceMappingURL=style.css.map */
