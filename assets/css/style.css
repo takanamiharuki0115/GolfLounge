@@ -1114,71 +1114,97 @@ label:has([type=radio]:checked)::after {
   color: white;
   padding-right: 10px;
 }
-#top .p-facility, #top .p-booth, #top .p-price {
+#top .p-facility,
+#top .p-booth,
+#top .p-price {
   width: 100%;
   height: 800px;
   display: flex;
 }
 @media screen and (max-width: 768px) {
-  #top .p-facility, #top .p-booth, #top .p-price {
+  #top .p-facility,
+  #top .p-booth,
+  #top .p-price {
     flex-direction: column;
     height: auto;
   }
 }
-#top .p-facility__left, #top .p-booth__left, #top .p-price__left {
+#top .p-facility__left,
+#top .p-booth__left,
+#top .p-price__left {
   width: 66%;
   position: relative;
 }
 @media screen and (max-width: 1200px) {
-  #top .p-facility__left, #top .p-booth__left, #top .p-price__left {
+  #top .p-facility__left,
+  #top .p-booth__left,
+  #top .p-price__left {
     width: 60%;
   }
 }
 @media screen and (max-width: 768px) {
-  #top .p-facility__left, #top .p-booth__left, #top .p-price__left {
+  #top .p-facility__left,
+  #top .p-booth__left,
+  #top .p-price__left {
     width: 100%;
     height: 313px;
   }
 }
-#top .p-facility__left img, #top .p-booth__left img, #top .p-price__left img {
+#top .p-facility__left img,
+#top .p-booth__left img,
+#top .p-price__left img {
   width: 100%;
   height: 800px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media screen and (max-width: 768px) {
-  #top .p-facility__left img, #top .p-booth__left img, #top .p-price__left img {
+  #top .p-facility__left img,
+  #top .p-booth__left img,
+  #top .p-price__left img {
     height: 313px;
     -o-object-fit: cover;
        object-fit: cover;
   }
 }
-#top .p-facility__right, #top .p-booth__right, #top .p-price__right {
+#top .p-facility__right,
+#top .p-booth__right,
+#top .p-price__right {
   width: 34%;
   background-color: #111111;
 }
 @media screen and (max-width: 1200px) {
-  #top .p-facility__right, #top .p-booth__right, #top .p-price__right {
+  #top .p-facility__right,
+  #top .p-booth__right,
+  #top .p-price__right {
     width: 40%;
   }
 }
 @media screen and (max-width: 768px) {
-  #top .p-facility__right, #top .p-booth__right, #top .p-price__right {
+  #top .p-facility__right,
+  #top .p-booth__right,
+  #top .p-price__right {
     width: 100%;
     height: 408px;
   }
 }
-#top .p-facility__right--container, #top .p-booth__right--container, #top .p-price__right--container {
+#top .p-facility__right--container,
+#top .p-booth__right--container,
+#top .p-price__right--container {
   width: 272px;
   margin: 200px auto 0;
 }
 @media screen and (max-width: 768px) {
-  #top .p-facility__right--container, #top .p-booth__right--container, #top .p-price__right--container {
+  #top .p-facility__right--container,
+  #top .p-booth__right--container,
+  #top .p-price__right--container {
     margin-top: 56px;
     width: 311px;
   }
 }
-#top .p-facility__right--container h2, #top .p-booth__right--container h2, #top .p-price__right--container h2 {
+#top .p-facility__right--container h2,
+#top .p-booth__right--container h2,
+#top .p-price__right--container h2 {
   font-family: "A P-OTF UD Shin Go Pr6N";
   font-size: 32px;
   font-weight: 400;
@@ -1187,7 +1213,9 @@ label:has([type=radio]:checked)::after {
   color: #F8F8F8;
   text-align: left;
 }
-#top .p-facility__right--container h2 small, #top .p-booth__right--container h2 small, #top .p-price__right--container h2 small {
+#top .p-facility__right--container h2 small,
+#top .p-booth__right--container h2 small,
+#top .p-price__right--container h2 small {
   display: block;
   padding-top: 16px;
   color: #FF2222;
@@ -1197,7 +1225,9 @@ label:has([type=radio]:checked)::after {
   letter-spacing: 0.1em;
   text-align: left;
 }
-#top .p-facility__right--container p, #top .p-booth__right--container p, #top .p-price__right--container p {
+#top .p-facility__right--container p,
+#top .p-booth__right--container p,
+#top .p-price__right--container p {
   padding-top: 48px;
   font-size: 16px;
   font-weight: 400;
@@ -1206,7 +1236,9 @@ label:has([type=radio]:checked)::after {
   text-align: left;
   color: #F8F8F8;
 }
-#top .p-facility__right--container a, #top .p-booth__right--container a, #top .p-price__right--container a {
+#top .p-facility__right--container a,
+#top .p-booth__right--container a,
+#top .p-price__right--container a {
   display: flex;
   width: 180px;
   height: 40px;
@@ -1216,7 +1248,9 @@ label:has([type=radio]:checked)::after {
   align-items: center;
   justify-content: center;
 }
-#top .p-facility__right--container a span, #top .p-booth__right--container a span, #top .p-price__right--container a span {
+#top .p-facility__right--container a span,
+#top .p-booth__right--container a span,
+#top .p-price__right--container a span {
   color: white;
   padding-right: 10px;
 }
@@ -1256,7 +1290,9 @@ label:has([type=radio]:checked)::after {
     height: 260px;
   }
 }
-#top .p-flow-beginner__left .flow-content, #top .p-flow-beginner__left .beginner-content, #top .p-flow-beginner__right .flow-content, #top .p-flow-beginner__right .beginner-content {
+#top .p-flow-beginner__left .flow-content,
+#top .p-flow-beginner__left .beginner-content, #top .p-flow-beginner__right .flow-content,
+#top .p-flow-beginner__right .beginner-content {
   width: 67%;
   position: absolute;
   left: 16%;
@@ -1266,12 +1302,16 @@ label:has([type=radio]:checked)::after {
   align-items: center;
 }
 @media screen and (max-width: 768px) {
-  #top .p-flow-beginner__left .flow-content, #top .p-flow-beginner__left .beginner-content, #top .p-flow-beginner__right .flow-content, #top .p-flow-beginner__right .beginner-content {
+  #top .p-flow-beginner__left .flow-content,
+  #top .p-flow-beginner__left .beginner-content, #top .p-flow-beginner__right .flow-content,
+  #top .p-flow-beginner__right .beginner-content {
     left: 32px;
     width: calc(100% - 64px);
   }
 }
-#top .p-flow-beginner__left .flow-content h2, #top .p-flow-beginner__left .beginner-content h2, #top .p-flow-beginner__right .flow-content h2, #top .p-flow-beginner__right .beginner-content h2 {
+#top .p-flow-beginner__left .flow-content h2,
+#top .p-flow-beginner__left .beginner-content h2, #top .p-flow-beginner__right .flow-content h2,
+#top .p-flow-beginner__right .beginner-content h2 {
   font-family: "A P-OTF UD Shin Go Pr6N";
   font-size: 32px;
   font-weight: 400;
@@ -1280,7 +1320,9 @@ label:has([type=radio]:checked)::after {
   text-align: left;
   color: #F8F8F8;
 }
-#top .p-flow-beginner__left .flow-content h2 small, #top .p-flow-beginner__left .beginner-content h2 small, #top .p-flow-beginner__right .flow-content h2 small, #top .p-flow-beginner__right .beginner-content h2 small {
+#top .p-flow-beginner__left .flow-content h2 small,
+#top .p-flow-beginner__left .beginner-content h2 small, #top .p-flow-beginner__right .flow-content h2 small,
+#top .p-flow-beginner__right .beginner-content h2 small {
   display: block;
   padding-top: 16px;
   font-size: 14px;
@@ -1290,7 +1332,9 @@ label:has([type=radio]:checked)::after {
   text-align: left;
   color: #FF2222;
 }
-#top .p-flow-beginner__left .flow-content a, #top .p-flow-beginner__left .beginner-content a, #top .p-flow-beginner__right .flow-content a, #top .p-flow-beginner__right .beginner-content a {
+#top .p-flow-beginner__left .flow-content a,
+#top .p-flow-beginner__left .beginner-content a, #top .p-flow-beginner__right .flow-content a,
+#top .p-flow-beginner__right .beginner-content a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1300,7 +1344,9 @@ label:has([type=radio]:checked)::after {
   height: 96px;
 }
 @media screen and (max-width: 1080px) {
-  #top .p-flow-beginner__left .flow-content a, #top .p-flow-beginner__left .beginner-content a, #top .p-flow-beginner__right .flow-content a, #top .p-flow-beginner__right .beginner-content a {
+  #top .p-flow-beginner__left .flow-content a,
+  #top .p-flow-beginner__left .beginner-content a, #top .p-flow-beginner__right .flow-content a,
+  #top .p-flow-beginner__right .beginner-content a {
     width: 72px;
     height: 72px;
   }
@@ -1465,17 +1511,23 @@ label:has([type=radio]:checked)::after {
     width: 100%;
   }
 }
-#top .p-access-faq__access .access-title, #top .p-access-faq__access .faq-title, #top .p-access-faq__faq .access-title, #top .p-access-faq__faq .faq-title {
+#top .p-access-faq__access .access-title,
+#top .p-access-faq__access .faq-title, #top .p-access-faq__faq .access-title,
+#top .p-access-faq__faq .faq-title {
   display: flex;
   align-items: center;
   gap: 32px;
 }
 @media screen and (max-width: 768px) {
-  #top .p-access-faq__access .access-title, #top .p-access-faq__access .faq-title, #top .p-access-faq__faq .access-title, #top .p-access-faq__faq .faq-title {
+  #top .p-access-faq__access .access-title,
+  #top .p-access-faq__access .faq-title, #top .p-access-faq__faq .access-title,
+  #top .p-access-faq__faq .faq-title {
     gap: 24px;
   }
 }
-#top .p-access-faq__access .access-title h2, #top .p-access-faq__access .faq-title h2, #top .p-access-faq__faq .access-title h2, #top .p-access-faq__faq .faq-title h2 {
+#top .p-access-faq__access .access-title h2,
+#top .p-access-faq__access .faq-title h2, #top .p-access-faq__faq .access-title h2,
+#top .p-access-faq__faq .faq-title h2 {
   font-family: "A P-OTF UD Shin Go Pr6N";
   font-size: 32px;
   font-weight: 400;
@@ -1485,12 +1537,16 @@ label:has([type=radio]:checked)::after {
   color: #F8F8F8;
 }
 @media screen and (max-width: 768px) {
-  #top .p-access-faq__access .access-title h2, #top .p-access-faq__access .faq-title h2, #top .p-access-faq__faq .access-title h2, #top .p-access-faq__faq .faq-title h2 {
+  #top .p-access-faq__access .access-title h2,
+  #top .p-access-faq__access .faq-title h2, #top .p-access-faq__faq .access-title h2,
+  #top .p-access-faq__faq .faq-title h2 {
     font-size: 24px;
     line-height: 24px;
   }
 }
-#top .p-access-faq__access .access-title h2 small, #top .p-access-faq__access .faq-title h2 small, #top .p-access-faq__faq .access-title h2 small, #top .p-access-faq__faq .faq-title h2 small {
+#top .p-access-faq__access .access-title h2 small,
+#top .p-access-faq__access .faq-title h2 small, #top .p-access-faq__faq .access-title h2 small,
+#top .p-access-faq__faq .faq-title h2 small {
   display: block;
   padding-top: 16px;
   color: rgba(248, 248, 248, 0.8);
@@ -1501,7 +1557,9 @@ label:has([type=radio]:checked)::after {
   text-align: left;
 }
 @media screen and (max-width: 768px) {
-  #top .p-access-faq__access .access-title h2 small, #top .p-access-faq__access .faq-title h2 small, #top .p-access-faq__faq .access-title h2 small, #top .p-access-faq__faq .faq-title h2 small {
+  #top .p-access-faq__access .access-title h2 small,
+  #top .p-access-faq__access .faq-title h2 small, #top .p-access-faq__faq .access-title h2 small,
+  #top .p-access-faq__faq .faq-title h2 small {
     font-size: 12px;
     line-height: 12px;
   }
@@ -1827,6 +1885,327 @@ label:has([type=radio]:checked)::after {
   #about-us__feature ul li figure img {
     height: 233.5px;
   }
+}
+
+#facility .facility__fv {
+  width: 100%;
+  height: 480px;
+  position: relative;
+  background-color: #666;
+}
+#facility .facility__fv img {
+  width: 100%;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#facility .facility__fv h1 {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  position: absolute;
+  top: 35%;
+  left: 8%;
+  color: #F8F8F8;
+}
+@media screen and (max-width: 768px) {
+  #facility .facility__fv h1 {
+    font-family: "A P-OTF UD Shin Go Pr6N";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+}
+#facility .facility__fv h1 small {
+  display: block;
+  padding-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: rgba(248, 248, 248, 0.8);
+}
+@media screen and (max-width: 768px) {
+  #facility .facility__fv h1 small {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+  }
+}
+#facility .facility__item_right {
+  background-color: #333;
+  padding-top: 240px;
+  padding-bottom: 240px;
+}
+@media screen and (max-width: 768px) {
+  #facility .facility__item_right {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+#facility .facility__item_right .img-box {
+  display: flex;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  #facility .facility__item_right .img-box {
+    margin-bottom: 40px;
+  }
+}
+#facility .facility__item_right .img-box .col-ttl {
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+  color: rgba(248, 248, 248, 0.3);
+  display: inline-block;
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+@media screen and (max-width: 768px) {
+  #facility .facility__item_right .img-box .col-ttl {
+    font-size: 12px;
+  }
+}
+#facility .facility__item_right .img-box img {
+  max-width: 1232px;
+  width: calc(100vw - 160px);
+  height: 560px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 24px;
+}
+@media screen and (max-width: 768px) {
+  #facility .facility__item_right .img-box img {
+    height: 224px;
+    margin-left: 10px;
+    width: calc(100vw - 52px);
+  }
+}
+#facility .facility__item_right .content {
+  padding-left: 200px;
+  padding-right: 160px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  #facility .facility__item_right .content {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+    gap: 24px;
+    padding-bottom: 24px;
+  }
+}
+#facility .facility__item_right .content h2 {
+  width: 50%;
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #fff;
+}
+@media screen and (max-width: 1200px) {
+  #facility .facility__item_right .content h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #facility .facility__item_right .content h2 {
+    width: 100%;
+  }
+}
+#facility .facility__item_right .content p {
+  width: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: rgba(248, 248, 248, 0.8);
+  margin-left: 80px;
+}
+@media screen and (max-width: 768px) {
+  #facility .facility__item_right .content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.8px;
+    letter-spacing: 1.4px;
+    text-align: left;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+#facility .facility__item_left {
+  background-color: #222;
+  padding-top: 240px;
+  padding-bottom: 240px;
+}
+@media screen and (max-width: 768px) {
+  #facility .facility__item_left {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+#facility .facility__item_left .img-box {
+  display: flex;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  #facility .facility__item_left .img-box {
+    margin-bottom: 40px;
+  }
+}
+#facility .facility__item_left .img-box img {
+  max-width: 1232px;
+  width: calc(100vw - 160px);
+  height: 560px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 24px;
+}
+@media screen and (max-width: 768px) {
+  #facility .facility__item_left .img-box img {
+    height: 224px;
+    margin-right: 10px;
+    width: calc(100vw - 52px);
+  }
+}
+#facility .facility__item_left .img-box .col-ttl {
+  margin-right: auto;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+  color: rgba(248, 248, 248, 0.3);
+  display: inline-block;
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+@media screen and (max-width: 768px) {
+  #facility .facility__item_left .img-box .col-ttl {
+    font-size: 12px;
+  }
+}
+#facility .facility__item_left .content {
+  padding-left: 160px;
+  padding-right: 200px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  #facility .facility__item_left .content {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+    gap: 24px;
+    padding-bottom: 24px;
+  }
+}
+#facility .facility__item_left .content h2 {
+  width: 50%;
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #fff;
+}
+@media screen and (max-width: 1200px) {
+  #facility .facility__item_left .content h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #facility .facility__item_left .content h2 {
+    width: 100%;
+  }
+}
+#facility .facility__item_left .content p {
+  width: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: rgba(248, 248, 248, 0.8);
+  margin-left: 80px;
+}
+@media screen and (max-width: 768px) {
+  #facility .facility__item_left .content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.8px;
+    letter-spacing: 1.4px;
+    text-align: left;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+#facility .facility__lounge-view {
+  background-color: #111111;
+  padding: 240px;
+}
+@media screen and (max-width: 1200px) {
+  #facility .facility__lounge-view {
+    padding: 240px 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #facility .facility__lounge-view {
+    padding: 120px 32px;
+  }
+}
+#facility .facility__lounge-view h2 {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #DDDDDD;
+  display: block;
+  margin: auto;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  #facility .facility__lounge-view h2 {
+    margin-bottom: 56px;
+  }
+}
+#facility .facility__lounge-view h2 small {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #FF2222;
+  display: block;
+  padding-top: 16px;
+}
+#facility .facility__lounge-view .video-box {
+  width: 100%;
+  height: 37.5vw;
+  background-color: #333;
 }
 
 .arrow {
