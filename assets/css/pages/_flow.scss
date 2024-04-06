@@ -1,0 +1,200 @@
+#flow {
+    .flow {
+        &__fv {
+            width: 100%;
+            height: 480px;
+            position: relative;
+            background-color: #666;
+
+            img {
+                width: 100%;
+                height: 480px;
+                object-fit: cover;
+            }
+
+            h1 {
+                font-family: $font-APOTF;
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 0.05em;
+                position: absolute;
+                top: 35%;
+                left: 8%;
+                color: #F8F8F8;
+
+                @include media-sp {
+                    font-family: $font-APOTF;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0.05em;
+                    text-align: left;
+                }
+
+                small {
+                    display: block;
+                    padding-top: 16px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 14px;
+                    letter-spacing: 0.1em;
+                    text-align: left;
+                    color: rgba(248, 248, 248, 0.8);
+
+                    @include media-sp {
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 12px;
+                        letter-spacing: 0.1em;
+                    }
+                }
+            }
+        }
+
+        &__main {
+            background-color: #333;
+
+            .container {
+                max-width: 1440px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 240px 160px 120px;
+                color: #f8f8f8;
+                display: flex;
+                flex-direction: column;
+                gap: 80px;
+                position: relative;
+
+                @include media-sp {
+                    padding: 120px 32px 40px;
+                    gap: 40px;
+                }
+
+                .line {
+                    position: absolute;
+                    border-radius: 30px;
+                    background-image: linear-gradient(rgba(17, 17, 17, 0.30) 75%, rgba(248, 248, 249, 0));
+                    width: 8px;
+                    left: 166px;
+                    top: 224px;
+                    height: calc(100% - 344px);
+
+                    @include media-sp {
+                        width: 4px;
+                        left: 36px;
+                        top: 98px;
+                        height: calc(100% - 160px);
+                    }
+                }
+
+                .item {
+                    position: relative;
+                    display: flex;
+
+                    @include media-pc {
+                        flex-direction: column-reverse;
+                    }
+
+                    .attach {
+                        position: absolute;
+                        height: max-content;
+                        display: flex;
+                        top: 0;
+
+                        label {
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 100%;
+                            letter-spacing: 1.4px;
+                            padding: 3px 8px;
+                            background: rgba(248, 248, 248, 0.30);
+
+                            @include media-sp {
+                                font-size: 12px;
+                                letter-spacing: 1.2px;
+                                padding: 2px 4px;
+                            }
+                        }
+                    }
+
+                    .content {
+                        margin-top: 68px;
+                        margin-left: 118px;
+
+                        @include media-sp {
+                            margin-top: 16px;
+                            margin-left: 28px;
+                        }
+
+                        h3 {
+                            font-size: 32px;
+                            line-height: 150%;
+                            font-weight: 400;
+                            letter-spacing: 3.2px;
+
+                            @include media-sp {
+                                font-size: 20px;
+                                letter-spacing: 2px;
+                            }
+                        }
+
+                        p {
+                            margin-top: 32px;
+                            font-size: 16px;
+                            line-height: 170%;
+                            letter-spacing: 1.6px;
+                            opacity: .8;
+
+                            @include media-sp {
+                                margin-top: 16px;
+                                font-size: 14px;
+                                letter-spacing: 1.4px;
+                            }
+                        }
+                    }
+
+                    img {
+                        max-width: 420px;
+                        margin-left: 80px;
+                        height: 315px;
+
+                        @include media-pc {
+                            margin-left: 118px;
+                            margin-top: 40px;
+                        }
+
+                        @include media-sp {
+                            max-width: 283px;
+                            height: 212px;
+                            margin-left: 28px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__btn {
+            padding-bottom: 240px;
+            background-color: #333;
+
+            .btn {
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                align-items: center;
+                color: #F8F8F8;
+                font-size: 16px;
+                letter-spacing: 1.6px;
+                padding: 16px 32px;
+                border-radius: 50px;
+                border: 1px solid rgba(248, 248, 248, 0.30);
+                width: fit-content;
+
+                svg {
+                    margin-left: 12px;
+                }
+            }
+        }
+    }
+}

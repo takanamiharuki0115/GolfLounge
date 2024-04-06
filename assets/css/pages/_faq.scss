@@ -1,0 +1,207 @@
+#faq {
+    .faq {
+        &__fv {
+            width: 100%;
+            height: 480px;
+            position: relative;
+            background-color: #666;
+
+            img {
+                width: 100%;
+                height: 480px;
+                object-fit: cover;
+            }
+
+            h1 {
+                font-family: $font-APOTF;
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 0.05em;
+                position: absolute;
+                top: 35%;
+                left: 8%;
+                color: #F8F8F8;
+
+                @include media-sp {
+                    font-family: $font-APOTF;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0.05em;
+                    text-align: left;
+                }
+
+                small {
+                    display: block;
+                    padding-top: 16px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 14px;
+                    letter-spacing: 0.1em;
+                    text-align: left;
+                    color: rgba(248, 248, 248, 0.8);
+
+                    @include media-sp {
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 12px;
+                        letter-spacing: 0.1em;
+                    }
+                }
+            }
+        }
+
+        &__main {
+            background-color: #ddd;
+            color: #111;
+            position: relative;
+
+            .container {
+                max-width: 1440px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 160px;
+                display: flex;
+                flex-direction: column;
+                gap: 120px;
+
+                @include media-sp {
+                    padding: 120px 32px 40px;
+                }
+
+                .qa-box {
+                    h2 {
+                        color: #111;
+                        font-size: 32px;
+                        font-weight: 400;
+                        line-height: 150%;
+                        letter-spacing: 3.2px;
+                        padding-bottom: 48px;
+                        border-bottom: 1px solid rgba(17, 17, 17, 0.30);
+
+                        @include media-sp {
+                            font-size: 24px;
+                            letter-spacing: 2.4px;
+                        }
+                    }
+
+                    .qa-item {
+
+                        .query {
+                            padding: 32px 16px 32px 70px;
+                            color: #111;
+                            font-size: 16px;
+                            line-height: 170%;
+                            letter-spacing: 1.6px;
+                            border-bottom: 1px solid rgba(17, 17, 17, 0.30);
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+
+                            @include media-sp {
+                                font-size: 14px;
+                                letter-spacing: 1.4px;
+                                padding: 24px 16px 24px 70px;
+                            }
+
+                            &::before {
+                                content: 'Q';
+                                font-size: 32px;
+                                line-height: 150%;
+                                letter-spacing: 3.2px;
+                                position: absolute;
+                                left: 16px;
+
+                                @include media-sp {
+                                    margin-right: 24px;
+                                }
+                            }
+
+                            .svg-box {
+                                margin-left: 48px;
+                                display: block;
+
+                                @include media-sp {
+                                    margin-left: 24px;
+                                }
+
+                                svg {
+                                    width: 40px;
+                                    height: 40px;
+
+                                    @include media-sp {
+                                        width: 32px;
+                                        height: 32px;
+                                    }
+                                }
+
+                                .minus {
+                                    display: none;
+                                }
+
+                                .plus {
+                                    display: block;
+                                }
+                            }
+                        }
+
+                        .answer {
+                            color: #111;
+                            font-size: 16px;
+                            line-height: 170%;
+                            letter-spacing: 1.6px;
+                            padding: 32px 32px 32px 70px;
+                            display: none;
+                            border-bottom: 1px solid rgba(17, 17, 17, 0.30);
+                            background: rgba(17, 17, 17, 0.10);
+                            display: none;
+                            align-items: center;
+                            position: relative;
+
+                            @include media-sp {
+                                padding: 24px 24px 24px 70px;
+                                font-size: 14px;
+                                letter-spacing: 1.4px;
+                            }
+
+                            &::before {
+                                content: 'A';
+                                font-size: 32px;
+                                line-height: 150%;
+                                letter-spacing: 3.2px;
+                                margin-right: 48px;
+                                display: inline-block;
+                                position: absolute;
+                                left: 16px;
+
+                                @include media-sp {
+                                    margin-right: 24px;
+                                }
+                            }
+                        }
+                    }
+
+                    .qa-item-open {
+                        .query {
+                            .svg-box {
+                                .minus {
+                                    display: block;
+                                }
+
+                                .plus {
+                                    display: none;
+                                }
+
+                            }
+                        }
+
+                        .answer {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
