@@ -13,6 +13,10 @@
   font-family: "SOURCEHANSANSJP-NORMAL";
   src: url(../fonts/SOURCEHANSANSJP-NORMAL_0.OTF);
 }
+@font-face {
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
+  src: url(../fonts/A-OTF-UDShinGoPr6N-Regular.otf);
+}
 .l-common {
   width: 1480px;
   max-width: 100%;
@@ -54,6 +58,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  vertical-align: bottom;
   border: 0;
 }
 
@@ -61,55 +66,19 @@ a {
   text-decoration: none;
 }
 
-body {
-  overflow-x: hidden;
-  background: #FAFAF8;
-}
-@media screen and (max-width: 768px) {
-  body {
-    min-width: unset;
-  }
-}
-
 html {
   scroll-behavior: smooth;
-  background: #FAFAF8;
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
 }
 
 *::-moz-selection {
-  background: #333;
+  background: #826F34;
   color: white;
 }
 
 *::selection {
-  background: #333;
+  background: #826F34;
   color: white;
-}
-*::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(248, 248, 249, 0.3);
-  background-color: #F5F5F5;
-}
-*::-webkit-scrollbar {
-  width: 6px;
-  background-color: #F5F5F5;
-}
-*::-webkit-scrollbar-thumb {
-  background-color: #333;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
 }
 
 h1,
@@ -150,29 +119,6 @@ button {
   cursor: pointer;
   border: 0;
   outline: none;
-  background: none;
-}
-
-input[type=submit],
-input[type=button] {
-  box-sizing: border-box;
-  border: none;
-  border-radius: 0;
-  -webkit-appearance: none;
-}
-input[type=submit]::-webkit-search-decoration,
-input[type=button]::-webkit-search-decoration {
-  display: none;
-}
-input[type=submit]:focus,
-input[type=button]:focus {
-  outline-offset: -2px;
-}
-
-input,
-textarea {
-  -webkit-appearance: none;
-  border-radius: 0;
 }
 
 table td,
@@ -183,7 +129,6 @@ table th {
 
 img {
   max-width: 100%;
-  width: 100%;
   line-height: 0;
   vertical-align: bottom;
   pointer-events: none;
@@ -191,22 +136,12 @@ img {
      -moz-user-select: none;
           user-select: none;
   border: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 input:focus {
   outline: 0;
-}
-
-hr {
-  margin: 1.5em 0;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-}
-
-* {
-  padding: 0;
-  line-height: 1;
 }
 
 td,
@@ -244,139 +179,15 @@ textarea {
   resize: vertical;
 }
 
-[type=search] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
 fieldset,
 legend {
   padding: 0;
-}
-
-label,
-legend {
-  margin-bottom: 0;
-  font-weight: 600;
-}
-
-fieldset {
-  margin: 0;
-  background-color: transparent;
-  border: 0;
-}
-
-[type=radio]:checked,
-[type=radio]:not(:checked) {
-  position: absolute;
-  left: -9999px;
-}
-
-[type=checkbox]:checked,
-[type=checkbox]:not(:checked) {
-  position: absolute;
-  left: -9999px;
-}
-
-[type=radio]:checked + label,
-[type=radio]:not(:checked) + label {
-  position: relative;
-  padding-left: 34px;
-  cursor: pointer;
-  line-height: 26px;
-  display: inline-block;
-  color: #111;
-  margin-bottom: 0;
-}
-
-[type=radio]:checked + label:before,
-[type=radio]:not(:checked) + label:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #111;
-  border-radius: 100%;
-  background: #fff;
-}
-
-[type=radio]:checked + label:after,
-[type=radio]:not(:checked) + label:after {
-  content: "";
-  width: 14px;
-  height: 14px;
-  background: #111;
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  border-radius: 100%;
-  transition: all 0.2s ease;
-}
-
-[type=radio]:not(:checked) + label:after {
-  opacity: 0;
-  transform: scale(0);
-}
-
-[type=radio]:checked + label:after {
-  opacity: 1;
-  transform: scale(1);
 }
 
 figure {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-label:has([type=radio]:checked),
-label:has([type=radio]:not(:checked)) {
-  position: relative;
-  padding-left: 34px;
-  cursor: pointer;
-  line-height: 26px;
-  display: inline-block;
-  color: #111;
-  margin-bottom: 0;
-}
-
-label:has([type=radio]:checked)::before,
-label:has([type=radio]:not(:checked))::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #111;
-  border-radius: 100%;
-  background: #fff;
-}
-
-label:has([type=radio]:checked)::after,
-label:has([type=radio]:not(:checked))::after {
-  content: "";
-  width: 14px;
-  height: 14px;
-  background: #111;
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  border-radius: 100%;
-  transition: all 0.2s ease;
-}
-
-label:has([type=radio]:not(:checked))::after {
-  opacity: 0;
-  transform: scale(0);
-}
-
-label:has([type=radio]:checked)::after {
-  opacity: 1;
-  transform: scale(1);
 }
 
 .c-header {
@@ -557,7 +368,7 @@ label:has([type=radio]:checked)::after {
 .hamburger__menus .hamburger__menus--container ul li a {
   color: #F8F8F8;
   padding: 20px 0;
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
@@ -584,7 +395,7 @@ label:has([type=radio]:checked)::after {
 }
 .hamburger__menus .hamburger__menus--container .f-menus__first a {
   color: #F8F8F8;
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
@@ -605,7 +416,7 @@ label:has([type=radio]:checked)::after {
   }
 }
 .hamburger__menus .hamburger__menus--container .f-menus__second span {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 10px;
   font-weight: 400;
   line-height: 10px;
@@ -639,7 +450,7 @@ label:has([type=radio]:checked)::after {
   width: 88%;
 }
 .c-footer .p-reservation__container h2 {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 32px;
   font-weight: 400;
   line-height: 48px;
@@ -659,7 +470,7 @@ label:has([type=radio]:checked)::after {
 .c-footer .p-reservation__container h2 small {
   display: block;
   padding-top: 16px;
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
@@ -678,7 +489,7 @@ label:has([type=radio]:checked)::after {
   align-items: center;
 }
 .c-footer .p-reservation__container .link label {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -769,7 +580,7 @@ label:has([type=radio]:checked)::after {
 }
 .c-footer__upper--right .footer__menu--first li a, .c-footer__upper--right .footer__menu--second li a {
   color: #F8F8F8;
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
@@ -809,7 +620,7 @@ label:has([type=radio]:checked)::after {
 }
 .c-footer__upper--right .footer__menu--last ul li a {
   color: rgba(248, 248, 248, 0.8);
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
@@ -826,13 +637,160 @@ label:has([type=radio]:checked)::after {
   padding-top: 50px;
 }
 .c-footer__bottom span {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
   letter-spacing: 0.1em;
   text-align: left;
   color: #F8F8F8;
+}
+
+#law .p-law {
+  padding-top: 200px;
+  padding-bottom: 240px;
+  background: #DDD;
+}
+@media screen and (max-width: 768px) {
+  #law .p-law {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+#law .p-law__container {
+  max-width: 1184px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin: 0 auto;
+}
+#law .p-law__ttl {
+  color: var(--KS-BLACK, #111);
+  /* KS H2 */
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 48px */
+  letter-spacing: 3.2px;
+  padding-bottom: 56px;
+}
+@media screen and (max-width: 768px) {
+  #law .p-law__ttl {
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    padding-bottom: 40px;
+  }
+}
+#law .p-law__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+@media screen and (max-width: 768px) {
+  #law .p-law__wrap {
+    gap: 20px;
+  }
+}
+#law .p-law__wrap--item .__item-ttl {
+  color: var(--KS-BLACK03, #333);
+  /* KS TEXT */
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 27.2px */
+  letter-spacing: 1.6px;
+  padding-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  #law .p-law__wrap--item .__item-ttl {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+  }
+}
+#law .p-law__wrap--item .__item-subttl {
+  color: var(--KS-BLACK03, #333);
+  /* KS TEXT */
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 27.2px */
+  letter-spacing: 1.6px;
+}
+@media screen and (max-width: 768px) {
+  #law .p-law__wrap--item .__item-subttl {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+  }
+}
+
+#terms .p-terms {
+  padding-top: 200px;
+  padding-bottom: 240px;
+}
+@media screen and (max-width: 768px) {
+  #terms .p-terms {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+#terms .p-terms__container {
+  max-width: 1184px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin: 0 auto;
+}
+#terms .p-terms__ttl {
+  color: var(--KS-BLACK, #111);
+  /* KS H2 */
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 48px */
+  letter-spacing: 3.2px;
+  padding-bottom: 56px;
+}
+@media screen and (max-width: 768px) {
+  #terms .p-terms__ttl {
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    padding-bottom: 40px;
+  }
+}
+#terms .p-terms__wrap--item h5 {
+  color: var(--KS-BLACK03, #333);
+  /* KS TEXT */
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+  letter-spacing: 1.6px;
+}
+@media screen and (max-width: 768px) {
+  #terms .p-terms__wrap--item h5 {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+  }
+}
+#terms .p-terms__wrap--item p {
+  color: var(--KS-BLACK03, #333);
+  /* KS TEXT */
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+  letter-spacing: 1.6px;
+}
+@media screen and (max-width: 768px) {
+  #terms .p-terms__wrap--item p {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+  }
 }
 
 .pc-only {
@@ -894,7 +852,7 @@ label:has([type=radio]:checked)::after {
 }
 @media screen and (max-width: 768px) {
   #top .p-fv__upper h1 {
-    font-family: "A P-OTF UD Shin Go Pr6N";
+    font-family: "A-OTF-UDShinGoPr6N-Regular";
     font-size: 28px;
     font-weight: 300;
     line-height: 30.8px;
@@ -951,7 +909,7 @@ label:has([type=radio]:checked)::after {
 }
 @media screen and (max-width: 768px) {
   #top .p-fv__bottom h1 {
-    font-family: "A P-OTF UD Shin Go Pr6N";
+    font-family: "A-OTF-UDShinGoPr6N-Regular";
     font-size: 28px;
     font-weight: 300;
     line-height: 30.8px;
@@ -1022,7 +980,7 @@ label:has([type=radio]:checked)::after {
   }
 }
 #top .p-aboutus__container h2 {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 32px;
   font-weight: 400;
   line-height: 32px;
@@ -1040,7 +998,7 @@ label:has([type=radio]:checked)::after {
 }
 #top .p-aboutus__container h2 small {
   display: block;
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
@@ -1058,7 +1016,7 @@ label:has([type=radio]:checked)::after {
   }
 }
 #top .p-aboutus__container h3 {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 32px;
   font-weight: 400;
   line-height: 48px;
@@ -1083,7 +1041,7 @@ label:has([type=radio]:checked)::after {
   }
 }
 #top .p-aboutus__container p {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 16px;
   font-weight: 400;
   line-height: 27.2px;
@@ -1205,7 +1163,7 @@ label:has([type=radio]:checked)::after {
 #top .p-facility__right--container h2,
 #top .p-booth__right--container h2,
 #top .p-price__right--container h2 {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 32px;
   font-weight: 400;
   line-height: 32px;
@@ -1312,7 +1270,7 @@ label:has([type=radio]:checked)::after {
 #top .p-flow-beginner__left .flow-content h2,
 #top .p-flow-beginner__left .beginner-content h2, #top .p-flow-beginner__right .flow-content h2,
 #top .p-flow-beginner__right .beginner-content h2 {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 32px;
   font-weight: 400;
   line-height: 48px;
@@ -1370,7 +1328,7 @@ label:has([type=radio]:checked)::after {
   text-align: left;
 }
 #top .p-news__container h2 {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 32px;
   font-weight: 400;
   line-height: 32px;
@@ -1411,7 +1369,7 @@ label:has([type=radio]:checked)::after {
      object-fit: cover;
 }
 #top .p-news__container ul li span {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 10px;
   font-weight: 400;
   line-height: 10px;
@@ -1422,7 +1380,7 @@ label:has([type=radio]:checked)::after {
   color: #999999;
 }
 #top .p-news__container ul li h3 {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -1436,7 +1394,7 @@ label:has([type=radio]:checked)::after {
   overflow: hidden;
 }
 #top .p-news__container ul li p {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 16px;
   font-weight: 400;
   line-height: 27.2px;
@@ -1450,7 +1408,7 @@ label:has([type=radio]:checked)::after {
   overflow: hidden;
 }
 #top .p-news__container ul li a {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -1528,7 +1486,7 @@ label:has([type=radio]:checked)::after {
 #top .p-access-faq__access .access-title h2,
 #top .p-access-faq__access .faq-title h2, #top .p-access-faq__faq .access-title h2,
 #top .p-access-faq__faq .faq-title h2 {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 32px;
   font-weight: 400;
   line-height: 48px;
@@ -1577,7 +1535,7 @@ label:has([type=radio]:checked)::after {
      object-fit: cover;
 }
 #about-us__fv h1 {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 32px;
   font-weight: 400;
   line-height: 32px;
@@ -1589,7 +1547,7 @@ label:has([type=radio]:checked)::after {
 }
 @media screen and (max-width: 768px) {
   #about-us__fv h1 {
-    font-family: "A P-OTF UD Shin Go Pr6N";
+    font-family: "A-OTF-UDShinGoPr6N-Regular";
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
@@ -1649,7 +1607,7 @@ label:has([type=radio]:checked)::after {
   }
 }
 #about-us__concept .content h2, #about-us__electricity .content h2 {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 48px;
   font-weight: 400;
   line-height: 72px;
@@ -1728,7 +1686,7 @@ label:has([type=radio]:checked)::after {
   justify-content: space-between;
   width: -moz-max-content;
   width: max-content;
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -1777,7 +1735,7 @@ label:has([type=radio]:checked)::after {
   }
 }
 #about-us__feature h2 {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 32px;
   font-weight: 400;
   line-height: 32px;
@@ -1900,7 +1858,7 @@ label:has([type=radio]:checked)::after {
      object-fit: cover;
 }
 #facility .facility__fv h1 {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 32px;
   font-weight: 400;
   line-height: 32px;
@@ -1912,7 +1870,7 @@ label:has([type=radio]:checked)::after {
 }
 @media screen and (max-width: 768px) {
   #facility .facility__fv h1 {
-    font-family: "A P-OTF UD Shin Go Pr6N";
+    font-family: "A-OTF-UDShinGoPr6N-Regular";
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
@@ -2008,7 +1966,7 @@ label:has([type=radio]:checked)::after {
 }
 #facility .facility__item_right .content h2 {
   width: 50%;
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 48px;
   font-weight: 400;
   line-height: 72px;
@@ -2118,7 +2076,7 @@ label:has([type=radio]:checked)::after {
 }
 #facility .facility__item_left .content h2 {
   width: 50%;
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 48px;
   font-weight: 400;
   line-height: 72px;
@@ -2173,7 +2131,7 @@ label:has([type=radio]:checked)::after {
   }
 }
 #facility .facility__lounge-view h2 {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 32px;
   font-weight: 400;
   line-height: 32px;
@@ -2221,7 +2179,7 @@ label:has([type=radio]:checked)::after {
      object-fit: cover;
 }
 #booth .booth__fv h1 {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 32px;
   font-weight: 400;
   line-height: 32px;
@@ -2233,7 +2191,7 @@ label:has([type=radio]:checked)::after {
 }
 @media screen and (max-width: 768px) {
   #booth .booth__fv h1 {
-    font-family: "A P-OTF UD Shin Go Pr6N";
+    font-family: "A-OTF-UDShinGoPr6N-Regular";
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
@@ -2652,7 +2610,7 @@ label:has([type=radio]:checked)::after {
      object-fit: cover;
 }
 #price .price__fv h1 {
-  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 32px;
   font-weight: 400;
   line-height: 32px;
@@ -2664,7 +2622,7 @@ label:has([type=radio]:checked)::after {
 }
 @media screen and (max-width: 768px) {
   #price .price__fv h1 {
-    font-family: "A P-OTF UD Shin Go Pr6N";
+    font-family: "A-OTF-UDShinGoPr6N-Regular";
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
