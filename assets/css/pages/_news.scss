@@ -1,0 +1,182 @@
+#news {
+    .news {
+        &__fv {
+            width: 100%;
+            height: 480px;
+            position: relative;
+            background-color: #666;
+
+            img {
+                width: 100%;
+                height: 480px;
+                object-fit: cover;
+            }
+
+            h1 {
+                font-family: $font-APOTF;
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 0.05em;
+                position: absolute;
+                top: 35%;
+                left: 8%;
+                color: #F8F8F8;
+
+                @include media-sp {
+                    font-family: $font-APOTF;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0.05em;
+                    text-align: left;
+                }
+
+                small {
+                    display: block;
+                    padding-top: 16px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 14px;
+                    letter-spacing: 0.1em;
+                    text-align: left;
+                    color: rgba(248, 248, 248, 0.8);
+
+                    @include media-sp {
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 12px;
+                        letter-spacing: 0.1em;
+                    }
+                }
+            }
+        }
+
+        &__main {
+            background-color: #ddd;
+            color: #111;
+            position: relative;
+
+            .container {
+                max-width: 1440px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 240px 160px 160px;
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 96px 40px;
+
+                @include media-pc {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                }
+
+                @include media-sp {
+                    padding: 120px 32px 40px;
+                }
+
+                .item {
+                    @include media-sp {
+                        width: 100%;
+                    }
+
+                    img {
+                        max-width: 347px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 100%;
+
+                        @include media-sp {
+                            max-width: 311px;
+                        }
+                    }
+
+                    label {
+                        color: #999;
+                        font-size: 10px;
+                        font-weight: 400;
+                        margin-top: 16px;
+                        margin-bottom: 16px;
+
+                        @include media-sp {
+                            font-size: 12px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 24px;
+                        font-weight: 400;
+                        line-height: 150%;
+                        letter-spacing: 2.4px;
+                        @include media-sp {
+                            font-size: 20px;
+                            letter-spacing: 2px;
+                        }
+                    }
+
+                    p {
+                        color: #333;
+                        font-size: 16px;
+                        line-height: 170%;
+                        letter-spacing: 1.6px;
+                        margin-top: 16px;
+                        max-height: 50px;
+                        overflow: hidden;
+                        -webkit-box-orient: vertical;
+                        display: -webkit-box;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 2;
+
+                        @include media-sp {
+                            font-size: 14px;
+                            letter-spacing: 1.4px;
+                        }
+                    }
+
+                    div {
+                        color: #111;
+                        font-size: 16px;
+                        font-weight: 500;
+                        letter-spacing: 1.6px;
+                        margin-top: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+
+                        .bar {
+                            background-color: #F22;
+                            width: 32px;
+                            height: 1px;
+                            margin-left: 12px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        &__btn {
+            padding-bottom: 240px;
+            background-color: #ddd;
+
+            .btn {
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                align-items: center;
+                color: #111;
+                font-size: 16px;
+                letter-spacing: 1.6px;
+                padding: 16px 32px;
+                border-radius: 50px;
+                border: 1px solid rgba(17, 17, 17, 0.30);
+                width: fit-content;
+
+                svg {
+                    margin-left: 12px;
+                }
+            }
+        }
+    }
+}

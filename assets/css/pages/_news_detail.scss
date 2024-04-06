@@ -1,0 +1,109 @@
+#news-detail {
+    .news-detail {
+        &__main {
+            background-color: #ddd;
+            color: #111;
+            position: relative;
+
+            .container {
+                max-width: 1440px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 120px;
+
+                @include media-sp {
+                    padding: 120px 32px 40px;
+                }
+
+                .board {
+                    padding: 120px 120px 160px 120px;
+                    border-radius: 16px;
+                    background: #EAEAEA;
+
+                    @include media-sp {
+                        padding: 64px 16px;
+                        border-radius: 8px;
+                    }
+
+                    label {
+                        color: #999;
+                        font-size: 16px;
+                        font-weight: 400;
+                        letter-spacing: 1.6px;
+
+                        @include media-sp {
+                            font-size: 12px;
+                            letter-spacing: 1.2px;
+                        }
+                    }
+
+                    h2 {
+                        color: #111;
+                        font-size: 24px;
+                        font-weight: 400;
+                        line-height: 150%;
+                        letter-spacing: 2.4px;
+                        margin-top: 24px;
+
+                        @include media-sp {
+                            font-size: 20px;
+                            letter-spacing: 2px;
+                        }
+                    }
+
+                    img {
+                        max-width: 960px;
+                        margin-top: 56px;
+                        margin-bottom: 56px;
+                        width: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        @include media-sp {
+                            max-width: 311px;
+                            margin-top: 24px;
+                            margin-bottom: 24px;
+                        }
+                    }
+
+                    p {
+                        color: #333;
+                        font-size: 16px;
+                        line-height: 170%;
+                        letter-spacing: 1.6px;
+                        margin-top: 32px;
+
+                        @include media-sp {
+                            font-size: 14px;
+                            letter-spacing: 1.4px;
+                            margin-top: 24px;
+                        }
+                    }
+
+                    .btn {
+                        margin-top: 160px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        display: flex;
+                        align-items: center;
+                        color: #111;
+                        font-size: 16px;
+                        letter-spacing: 1.6px;
+                        padding: 16px 32px;
+                        border-radius: 50px;
+                        border: 1px solid rgba(17, 17, 17, 0.30);
+                        width: fit-content;
+
+                        @include media-sp {
+                            margin-top: 48px;
+                        }
+
+                        svg {
+                            margin-right: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
