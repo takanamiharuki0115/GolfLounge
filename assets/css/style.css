@@ -2925,6 +2925,384 @@ label:has([type=radio]:checked)::after {
   margin-top: 24px;
 }
 
+#flow .flow__fv {
+  width: 100%;
+  height: 480px;
+  position: relative;
+  background-color: #666;
+}
+#flow .flow__fv img {
+  width: 100%;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#flow .flow__fv h1 {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  position: absolute;
+  top: 35%;
+  left: 8%;
+  color: #F8F8F8;
+}
+@media screen and (max-width: 768px) {
+  #flow .flow__fv h1 {
+    font-family: "A P-OTF UD Shin Go Pr6N";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+}
+#flow .flow__fv h1 small {
+  display: block;
+  padding-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: rgba(248, 248, 248, 0.8);
+}
+@media screen and (max-width: 768px) {
+  #flow .flow__fv h1 small {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+  }
+}
+#flow .flow__main {
+  padding: 240px 160px 120px;
+  background-color: #333;
+  color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  #flow .flow__main {
+    padding: 120px 32px 40px;
+    gap: 40px;
+  }
+}
+#flow .flow__main .line {
+  position: absolute;
+  border-radius: 30px;
+  background-image: linear-gradient(rgba(17, 17, 17, 0.3) 75%, rgba(248, 248, 249, 0));
+  width: 8px;
+  left: 166px;
+  top: 224px;
+  height: calc(100% - 344px);
+}
+@media screen and (max-width: 768px) {
+  #flow .flow__main .line {
+    width: 4px;
+    left: 36px;
+    top: 98px;
+    height: calc(100% - 160px);
+  }
+}
+#flow .flow__main .item {
+  position: relative;
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  #flow .flow__main .item {
+    flex-direction: column-reverse;
+  }
+}
+#flow .flow__main .item .attach {
+  position: absolute;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  top: 0;
+}
+#flow .flow__main .item .attach label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 1.4px;
+  padding: 3px 8px;
+  background: rgba(248, 248, 248, 0.3);
+}
+@media screen and (max-width: 768px) {
+  #flow .flow__main .item .attach label {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    padding: 2px 4px;
+  }
+}
+#flow .flow__main .item .content {
+  margin-top: 68px;
+  margin-left: 118px;
+}
+@media screen and (max-width: 768px) {
+  #flow .flow__main .item .content {
+    margin-top: 16px;
+    margin-left: 28px;
+  }
+}
+#flow .flow__main .item .content h3 {
+  font-size: 32px;
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: 3.2px;
+}
+@media screen and (max-width: 768px) {
+  #flow .flow__main .item .content h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
+#flow .flow__main .item .content p {
+  margin-top: 32px;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 1.6px;
+  opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  #flow .flow__main .item .content p {
+    margin-top: 16px;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+  }
+}
+#flow .flow__main .item img {
+  max-width: 420px;
+  margin-left: 80px;
+  height: 315px;
+}
+@media screen and (max-width: 1200px) {
+  #flow .flow__main .item img {
+    margin-left: 118px;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #flow .flow__main .item img {
+    max-width: 283px;
+    height: 212px;
+    margin-left: 28px;
+  }
+}
+#flow .flow__btn {
+  padding-bottom: 240px;
+  background-color: #333;
+}
+#flow .flow__btn .btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  color: #F8F8F8;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  padding: 16px 32px;
+  border-radius: 50px;
+  border: 1px solid rgba(248, 248, 248, 0.3);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#flow .flow__btn svg {
+  margin-left: 12px;
+}
+
+#beginner .beginner__fv {
+  width: 100%;
+  height: 480px;
+  position: relative;
+  background-color: #666;
+}
+#beginner .beginner__fv img {
+  width: 100%;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#beginner .beginner__fv h1 {
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  position: absolute;
+  top: 35%;
+  left: 8%;
+  color: #F8F8F8;
+}
+@media screen and (max-width: 768px) {
+  #beginner .beginner__fv h1 {
+    font-family: "A P-OTF UD Shin Go Pr6N";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+}
+#beginner .beginner__fv h1 small {
+  display: block;
+  padding-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: rgba(248, 248, 248, 0.8);
+}
+@media screen and (max-width: 768px) {
+  #beginner .beginner__fv h1 small {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+  }
+}
+#beginner .beginner__main {
+  padding: 240px 160px 120px;
+  background-color: #ddd;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  #beginner .beginner__main {
+    padding: 120px 32px 40px;
+    gap: 40px;
+  }
+}
+#beginner .beginner__main .line {
+  position: absolute;
+  border-radius: 30px;
+  background-image: linear-gradient(rgba(17, 17, 17, 0.1) 75%, rgba(248, 248, 249, 0));
+  width: 8px;
+  left: 166px;
+  top: 224px;
+  height: calc(100% - 344px);
+}
+@media screen and (max-width: 768px) {
+  #beginner .beginner__main .line {
+    width: 4px;
+    left: 36px;
+    top: 98px;
+    height: calc(100% - 160px);
+  }
+}
+#beginner .beginner__main .item {
+  position: relative;
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  #beginner .beginner__main .item {
+    flex-direction: column-reverse;
+  }
+}
+#beginner .beginner__main .item .attach {
+  position: absolute;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  top: 0;
+}
+#beginner .beginner__main .item .attach label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 1.4px;
+  padding: 3px 8px;
+  background: rgba(248, 248, 248, 0.3);
+}
+@media screen and (max-width: 768px) {
+  #beginner .beginner__main .item .attach label {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    padding: 2px 4px;
+  }
+}
+#beginner .beginner__main .item .content {
+  margin-top: 68px;
+  margin-left: 118px;
+}
+@media screen and (max-width: 768px) {
+  #beginner .beginner__main .item .content {
+    margin-top: 16px;
+    margin-left: 28px;
+  }
+}
+#beginner .beginner__main .item .content h3 {
+  font-size: 32px;
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: 3.2px;
+}
+@media screen and (max-width: 768px) {
+  #beginner .beginner__main .item .content h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
+#beginner .beginner__main .item .content p {
+  margin-top: 32px;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 1.6px;
+  opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  #beginner .beginner__main .item .content p {
+    margin-top: 16px;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+  }
+}
+#beginner .beginner__main .item img {
+  max-width: 420px;
+  margin-left: 80px;
+  height: 315px;
+}
+@media screen and (max-width: 1200px) {
+  #beginner .beginner__main .item img {
+    margin-left: 118px;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #beginner .beginner__main .item img {
+    max-width: 283px;
+    height: 212px;
+    margin-left: 28px;
+  }
+}
+#beginner .beginner__btn {
+  padding-bottom: 240px;
+  background-color: #ddd;
+}
+#beginner .beginner__btn .btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  color: #111;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  padding: 16px 32px;
+  border-radius: 50px;
+  border: 1px solid rgba(17, 17, 17, 0.3);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#beginner .beginner__btn svg {
+  margin-left: 12px;
+}
+
 .arrow {
   width: 96px;
   height: 96px;
