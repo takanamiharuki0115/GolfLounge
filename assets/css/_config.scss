@@ -18,7 +18,12 @@
     src: url(../fonts/SOURCEHANSANSJP-NORMAL_0.OTF);
 }
 
-$font-APOTF:'A P-OTF UD Shin Go Pr6N';
+@font-face {
+    font-family: "A-OTF-UDShinGoPr6N-Regular";
+    src: url(../fonts/A-OTF-UDShinGoPr6N-Regular.otf);
+  }
+
+$font-APOTF:'A-OTF-UDShinGoPr6N-Regular';
 $font-kiwi:'Kiwi Maru', serif;
 
 
