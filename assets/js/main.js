@@ -37,3 +37,21 @@ $('#to-top').click(function() {
 // $(".__item.has-child").click(function(){
 //     $(this).toggleClass("is-active")
 // })
+
+const qaitemlist = document.getElementsByClassName("qa-item");
+console.log(qaitemlist)
+for(let i = 0; i < qaitemlist.length; i++)
+{
+    qaitemlist[i].addEventListener("click", ()=> {
+        if(qaitemlist[i].classList.contains("qa-item-open")) {
+            qaitemlist[i].classList.remove("qa-item-open");
+            return true;
+        }
+        else {
+            for(let j = 0; j < qaitemlist.length; j++){
+                qaitemlist[j].classList.remove("qa-item-open");
+            }
+            qaitemlist[i].classList.add("qa-item-open");
+        }
+    });
+}
