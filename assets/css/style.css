@@ -238,6 +238,7 @@ figure {
   align-items: center;
   justify-content: center;
   padding: 29px 24px;
+  transition: 0.3s;
 }
 @media screen and (max-width: 768px) {
   .c-header__menu {
@@ -247,17 +248,25 @@ figure {
     max-height: 64px;
   }
 }
+.c-header__menu:hover {
+  background-color: #F8F8F8;
+  color: #E31A3C;
+}
 .c-header .hamBtn {
   width: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: 0.3s;
 }
 @media screen and (max-width: 768px) {
   .c-header .hamBtn {
     width: 64px;
   }
+}
+.c-header .hamBtn:hover {
+  background-color: #444;
 }
 .c-header .hamBtn input {
   display: none;
@@ -433,6 +442,7 @@ figure {
   position: relative;
 }
 .c-footer .p-reservation img {
+  width: 100%;
   height: 416px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1137,7 +1147,7 @@ figure {
   width: 100%;
   height: 72px;
   border-radius: 8px;
-  background: #333;
+  background-color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1150,11 +1160,16 @@ figure {
   line-height: 150%; /* 24px */
   text-transform: uppercase;
   margin-top: 80px;
+  transition: 0.3s;
 }
 @media screen and (max-width: 768px) {
   #contact .p-contact__form .__submit-btn {
     margin-top: 48px;
   }
+}
+#contact .p-contact__form .__submit-btn:hover {
+  color: #333;
+  background-color: #fff;
 }
 #contact .p-contact__complete--ttl {
   color: var(--KS-BLACK, #111);
@@ -1192,32 +1207,12 @@ figure {
   }
 }
 #contact .p-contact__complete--btn {
-  width: 256px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  color: #333;
-  /* KS TEXT */
-  font-family: "A-OTF-UDShinGoPr6N-Regular";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 170%; /* 27.2px */
-  letter-spacing: 1.6px;
   margin: 0 auto;
-  border-radius: 50px;
-  border: 1px solid var(--BLACK-OPACITY, rgba(17, 17, 17, 0.3));
   margin-top: 48px;
 }
-@media screen and (max-width: 768px) {
-  #contact .p-contact__complete--btn {
-    gap: 8px;
-    width: 252px;
-    font-size: 14px;
-    letter-spacing: 1.4px;
-  }
+#contact .p-contact__complete--btn svg {
+  margin-left: 0;
+  margin-right: 12px;
 }
 
 #access .access__fv {
@@ -1295,21 +1290,8 @@ figure {
     height: 311px;
   }
 }
-#access .access__main .container .gmap-btn {
-  color: #F8F8F8;
-  font-size: 16px;
-  letter-spacing: 1.6px;
-  padding: 16px 32px;
-  border-radius: 50px;
-  border: 1px solid rgba(248, 248, 248, 0.3);
-  width: -moz-max-content;
-  width: max-content;
-  display: flex;
-  align-items: center;
+#access .access__main .container a {
   margin: 40px auto;
-}
-#access .access__main .container .gmap-btn svg {
-  margin-left: 12px;
 }
 #access .access__main .container .info {
   display: flex;
@@ -1530,17 +1512,29 @@ figure {
     letter-spacing: 1.4px;
   }
 }
-#news .news__main .container .item div {
+#news .news__main .container .item a {
   color: #111;
+  width: -moz-max-content;
+  width: max-content;
+  padding-left: 10px;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 1.6px;
   margin-top: 40px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  margin-left: auto;
+  transition: 0.3s;
+  background: linear-gradient(90deg, rgb(248, 248, 248) 50%, transparent 0);
+  background-position: 100% 100%;
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
-#news .news__main .container .item div .bar {
+#news .news__main .container .item a:hover {
+  background-position: 0 0;
+}
+#news .news__main .container .item a .bar {
   background-color: #F22;
   width: 32px;
   height: 1px;
@@ -1550,21 +1544,11 @@ figure {
   padding-bottom: 240px;
   background-color: #ddd;
 }
-#news .news__btn .btn {
+#news .news__btn a {
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  align-items: center;
-  color: #111;
-  font-size: 16px;
-  letter-spacing: 1.6px;
-  padding: 16px 32px;
-  border-radius: 50px;
-  border: 1px solid rgba(17, 17, 17, 0.3);
-  width: -moz-fit-content;
-  width: fit-content;
 }
-#news .news__btn .btn svg {
+#news .news__btn a svg {
   margin-left: 12px;
 }
 
@@ -1650,27 +1634,18 @@ figure {
     margin-top: 24px;
   }
 }
-#news-detail .news-detail__main .container .board .btn {
+#news-detail .news-detail__main .container .board a {
   margin-top: 160px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  align-items: center;
-  color: #111;
-  font-size: 16px;
-  letter-spacing: 1.6px;
-  padding: 16px 32px;
-  border-radius: 50px;
-  border: 1px solid rgba(17, 17, 17, 0.3);
-  width: -moz-fit-content;
-  width: fit-content;
 }
 @media screen and (max-width: 768px) {
-  #news-detail .news-detail__main .container .board .btn {
+  #news-detail .news-detail__main .container .board a {
     margin-top: 48px;
   }
 }
-#news-detail .news-detail__main .container .board .btn svg {
+#news-detail .news-detail__main .container .board a svg {
+  margin-left: 0;
   margin-right: 12px;
 }
 
@@ -2037,22 +2012,9 @@ figure {
   padding-bottom: 240px;
   background-color: #ddd;
 }
-#beginner .beginner__btn .btn {
+#beginner .beginner__btn a {
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  align-items: center;
-  color: #111;
-  font-size: 16px;
-  letter-spacing: 1.6px;
-  padding: 16px 32px;
-  border-radius: 50px;
-  border: 1px solid rgba(17, 17, 17, 0.3);
-  width: -moz-fit-content;
-  width: fit-content;
-}
-#beginner .beginner__btn .btn svg {
-  margin-left: 12px;
 }
 
 #booth .booth__fv {
@@ -2696,22 +2658,9 @@ figure {
   padding-bottom: 240px;
   background-color: #333;
 }
-#flow .flow__btn .btn {
+#flow .flow__btn a {
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  align-items: center;
-  color: #F8F8F8;
-  font-size: 16px;
-  letter-spacing: 1.6px;
-  padding: 16px 32px;
-  border-radius: 50px;
-  border: 1px solid rgba(248, 248, 248, 0.3);
-  width: -moz-fit-content;
-  width: fit-content;
-}
-#flow .flow__btn .btn svg {
-  margin-left: 12px;
 }
 
 #top .p-fv {
@@ -2962,18 +2911,7 @@ figure {
   }
 }
 #top .p-aboutus__container a {
-  display: flex;
-  width: 180px;
-  height: 40px;
-  margin: 56px auto;
-  border: 1px solid rgba(248, 248, 248, 0.3);
-  border-radius: 50px;
-  align-items: center;
-  justify-content: center;
-}
-#top .p-aboutus__container a span {
-  color: white;
-  padding-right: 10px;
+  margin: 56px auto 80px;
 }
 #top .p-facility,
 #top .p-booth,
@@ -3046,7 +2984,6 @@ figure {
   #top .p-booth__right,
   #top .p-price__right {
     width: 100%;
-    height: 408px;
   }
 }
 #top .p-facility__right--container,
@@ -3100,20 +3037,7 @@ figure {
 #top .p-facility__right--container a,
 #top .p-booth__right--container a,
 #top .p-price__right--container a {
-  display: flex;
-  width: 180px;
-  height: 40px;
-  margin: 56px 0;
-  border: 1px solid rgba(248, 248, 248, 0.3);
-  border-radius: 50px;
-  align-items: center;
-  justify-content: center;
-}
-#top .p-facility__right--container a span,
-#top .p-booth__right--container a span,
-#top .p-price__right--container a span {
-  color: white;
-  padding-right: 10px;
+  margin: 56px 0 80px;
 }
 @media screen and (max-width: 768px) {
   #top .p-booth {
@@ -3157,7 +3081,8 @@ figure {
   width: 67%;
   position: absolute;
   left: 16%;
-  top: 30%;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -3584,21 +3509,6 @@ figure {
   }
 }
 #about-us__concept a, #about-us__electricity a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: -moz-max-content;
-  width: max-content;
-  font-family: "A-OTF-UDShinGoPr6N-Regular";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.1em;
-  text-align: right;
-  color: #F8F8F8;
-  padding: 16px 32px;
-  border: 1px solid rgba(248, 248, 248, 0.3);
-  border-radius: 50px;
   margin-right: 160px;
   float: right;
 }
@@ -3613,12 +3523,6 @@ figure {
     float: unset;
     margin: auto;
   }
-}
-#about-us__concept a span, #about-us__electricity a span {
-  text-align: center;
-}
-#about-us__concept a svg, #about-us__electricity a svg {
-  margin-left: 12px;
 }
 #about-us__electricity {
   background-color: #222 !important;
@@ -4429,11 +4333,39 @@ figure {
 }
 
 .main-btn {
+  display: flex;
+  padding: 16px 32px;
+  border: 1px solid rgba(248, 248, 248, 0.3);
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
   transition: 0.3s;
-  background: linear-gradient(90deg, rgba(248, 248, 248, 0.3) 50%, transparent 0);
+  background: linear-gradient(90deg, rgba(248, 248, 248, 0.5) 50%, transparent 0);
   background-position: 100% 100%;
   background-size: 200% 100%;
   background-repeat: no-repeat;
+  white-space: nowrap;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+}
+.main-btn span {
+  color: #f8f8f8;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  font-weight: 400px;
+  font-family: "A P-OTF UD Shin Go Pr6N";
+  text-align: center;
+}
+.main-btn svg {
+  margin-left: 12px;
+}
+
+.main-btn-light {
+  border: 1px solid rgba(17, 17, 17, 0.3);
+}
+.main-btn-light span {
+  color: #111;
 }
 
 .main-btn:hover {
