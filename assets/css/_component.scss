@@ -225,6 +225,9 @@
                 letter-spacing: 0.1em;
                 text-align: left;
                 transition: 0.3s;
+                &:hover {
+                    text-shadow: 0 0 10px white;
+                }
             }
         }
         .f-menus__second {
@@ -244,6 +247,12 @@
                 line-height: 10px;
                 letter-spacing: 0.1em;
                 text-align: left;
+            }
+            a {
+                transition: 0.3s;
+                &:hover {
+                    transform: rotate(360deg);
+                }
             }
         }
     }
@@ -387,6 +396,9 @@
                                 justify-content: space-between;
                                 padding: 20px 0;
                             }
+                            &:hover {
+                                text-shadow: 0 0 10px white;
+                            }
                         }
                     }
                     li:last-child {
@@ -415,6 +427,9 @@
                                 line-height: 12px;
                                 letter-spacing: 0.1em;
                                 text-align: left;
+                                &:hover {
+                                    text-shadow: 0 0 10px white;
+                                }
                             }
                         }
                         li:last-child {
@@ -438,6 +453,13 @@
             letter-spacing: 0.1em;
             text-align: left;
             color: #F8F8F8;
+        }
+
+        a {
+            transition: .3s;
+            &:hover {
+                transform: rotate(360deg);
+            }
         }
     }
 }
