@@ -154,20 +154,6 @@
         }
 
         a {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: max-content;
-            font-family: $font-APOTF;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 16px;
-            letter-spacing: 0.1em;
-            text-align: right;
-            color: #F8F8F8;
-            padding: 16px 32px;
-            border: 1px solid rgba(248, 248, 248, 0.3);
-            border-radius: 50px;
             margin-right: 160px;
             float: right;
 
@@ -179,14 +165,6 @@
                 margin-right: 32px;
                 float: unset;
                 margin: auto;
-            }
-
-            span {
-                text-align: center;
-            }
-
-            svg {
-                margin-left: 12px;
             }
         }
     }

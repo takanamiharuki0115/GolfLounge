@@ -84,11 +84,40 @@
 }
 
 .main-btn {
+    display: flex;
+    padding: 16px 32px;
+    border: 1px solid rgba(248, 248, 248, 0.3);
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
     transition: 0.3s;
-    background: linear-gradient(90deg, rgba(248, 248, 248, 0.3) 50%, transparent 0);
+    background: linear-gradient(90deg, rgba(248, 248, 248, 0.5) 50%, transparent 0);
     background-position: 100% 100%;
     background-size: 200% 100%;
     background-repeat: no-repeat;
+    white-space: nowrap;
+    width: max-content;
+    cursor: pointer;
+
+    span {
+        color: #f8f8f8;
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        font-weight: 400px;
+        font-family: "A P-OTF UD Shin Go Pr6N";
+        text-align: center;
+    }
+
+    svg {
+        margin-left: 12px;
+    }
+}
+
+.main-btn-light {
+    border: 1px solid rgba(17, 17, 17, 0.30);
+    span {
+        color: #111;
+    }
 }
 
 .main-btn:hover {

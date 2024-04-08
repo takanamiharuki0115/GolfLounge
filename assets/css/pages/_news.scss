@@ -134,15 +134,27 @@
                         }
                     }
 
-                    div {
+                    a {
                         color: #111;
+                        width: max-content;
+                        padding-left: 10px;
                         font-size: 16px;
                         font-weight: 500;
                         letter-spacing: 1.6px;
                         margin-top: 40px;
                         display: flex;
                         align-items: center;
-                        justify-content: flex-end;
+                        margin-left: auto;
+                        transition: 0.3s;
+                        background: linear-gradient(90deg, rgba(248, 248, 248, 1) 50%, transparent 0);
+                        background-position: 100% 100%;
+                        background-size: 200% 100%;
+                        background-repeat: no-repeat;
+                        cursor: pointer;
+                        
+                        &:hover {
+                            background-position: 0 0;
+                        }
 
                         .bar {
                             background-color: #F22;
@@ -160,18 +172,9 @@
             padding-bottom: 240px;
             background-color: #ddd;
 
-            .btn {
+            a {
                 margin-left: auto;
                 margin-right: auto;
-                display: flex;
-                align-items: center;
-                color: #111;
-                font-size: 16px;
-                letter-spacing: 1.6px;
-                padding: 16px 32px;
-                border-radius: 50px;
-                border: 1px solid rgba(17, 17, 17, 0.30);
-                width: fit-content;
 
                 svg {
                     margin-left: 12px;

@@ -47,11 +47,16 @@
         align-items: center;
         justify-content: center;
         padding: 29px 24px;
+        transition: .3s;
         @include media-sp {
             font-size: 12px;
             line-height: 12px;
             padding: 26px 16px;
             max-height: 64px;
+        }
+        &:hover {
+            background-color: #F8F8F8;
+            color: #E31A3C;
         }
     }
 
@@ -61,8 +66,12 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        transition: .3s;
         @include media-sp {
             width: 64px;
+        }
+        &:hover {
+            background-color: #444;
         }
         input {
           display: none;
@@ -247,6 +256,7 @@
     .p-reservation {
         position: relative;
         img {
+            width: 100%;
             height: 416px;
             object-fit: cover;
             @include media-sp {
