@@ -413,6 +413,9 @@ figure {
   text-align: left;
   transition: 0.3s;
 }
+.hamburger__menus .hamburger__menus--container .f-menus__first a:hover {
+  text-shadow: 0 0 10px white;
+}
 .hamburger__menus .hamburger__menus--container .f-menus__second {
   display: flex;
   justify-content: space-between;
@@ -432,6 +435,12 @@ figure {
   line-height: 10px;
   letter-spacing: 0.1em;
   text-align: left;
+}
+.hamburger__menus .hamburger__menus--container .f-menus__second a {
+  transition: 0.3s;
+}
+.hamburger__menus .hamburger__menus--container .f-menus__second a:hover {
+  transform: rotate(360deg);
 }
 
 .c-footer {
@@ -605,6 +614,9 @@ figure {
     padding: 20px 0;
   }
 }
+.c-footer__upper--right .footer__menu--first li a:hover, .c-footer__upper--right .footer__menu--second li a:hover {
+  text-shadow: 0 0 10px white;
+}
 .c-footer__upper--right .footer__menu--first li:last-child, .c-footer__upper--right .footer__menu--second li:last-child {
   margin-bottom: 0px;
 }
@@ -638,6 +650,9 @@ figure {
   letter-spacing: 0.1em;
   text-align: left;
 }
+.c-footer__upper--right .footer__menu--last ul li a:hover {
+  text-shadow: 0 0 10px white;
+}
 .c-footer__upper--right .footer__menu--last ul li:last-child {
   margin-bottom: 0px;
 }
@@ -655,6 +670,12 @@ figure {
   letter-spacing: 0.1em;
   text-align: left;
   color: #F8F8F8;
+}
+.c-footer__bottom a {
+  transition: 0.3s;
+}
+.c-footer__bottom a:hover {
+  transform: rotate(360deg);
 }
 
 #law .p-law {
@@ -2911,6 +2932,8 @@ figure {
   }
 }
 #top .p-aboutus__container a {
+  padding: 12px 16px;
+  letter-spacing: 2.4px;
   margin: 56px auto 80px;
 }
 #top .p-facility,
@@ -3246,6 +3269,10 @@ figure {
   text-align: left;
   color: #DDDDDD;
   margin-top: 40px;
+  transition: 0.3s;
+}
+#top .p-news__container ul li a:hover {
+  text-shadow: 0 0 10px white;
 }
 @media screen and (max-width: 768px) {
   #top .p-news__container ul li a {
