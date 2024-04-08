@@ -1755,6 +1755,9 @@ figure {
     letter-spacing: 2.4px;
   }
 }
+#faq .faq__main .container .qa-box .qa-item {
+  cursor: pointer;
+}
 #faq .faq__main .container .qa-box .qa-item .query {
   padding: 32px 16px 32px 70px;
   color: #111;
@@ -1789,6 +1792,7 @@ figure {
 #faq .faq__main .container .qa-box .qa-item .query .svg-box {
   margin-left: 48px;
   display: block;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   #faq .faq__main .container .qa-box .qa-item .query .svg-box {
@@ -1805,24 +1809,26 @@ figure {
     height: 32px;
   }
 }
-#faq .faq__main .container .qa-box .qa-item .query .svg-box .minus {
-  display: none;
-}
 #faq .faq__main .container .qa-box .qa-item .query .svg-box .plus {
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+  transition: 0.5s;
 }
 #faq .faq__main .container .qa-box .qa-item .answer {
-  color: #111;
+  color: transparent;
   font-size: 16px;
   line-height: 170%;
   letter-spacing: 1.6px;
-  padding: 32px 32px 32px 70px;
-  display: none;
+  height: 0;
   border-bottom: 1px solid rgba(17, 17, 17, 0.3);
   background: rgba(17, 17, 17, 0.1);
-  display: none;
+  overflow: hidden;
   align-items: center;
   position: relative;
+  transition: 0.5s;
+  padding: 0 32px 0 70px;
 }
 @media screen and (max-width: 768px) {
   #faq .faq__main .container .qa-box .qa-item .answer {
@@ -1846,14 +1852,13 @@ figure {
     margin-right: 24px;
   }
 }
-#faq .faq__main .container .qa-box .qa-item-open .query .svg-box .minus {
-  display: block;
-}
 #faq .faq__main .container .qa-box .qa-item-open .query .svg-box .plus {
-  display: none;
+  transform: rotate(0);
 }
 #faq .faq__main .container .qa-box .qa-item-open .answer {
-  display: flex;
+  height: unset;
+  padding: 32px 32px 32px 70px;
+  color: #111;
 }
 
 #beginner .beginner__fv {
