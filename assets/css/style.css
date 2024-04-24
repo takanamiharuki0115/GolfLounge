@@ -727,11 +727,11 @@ figure {
 }
 
 .mw_wp_form .error {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 @media screen and (max-width: 767px) {
   .mw_wp_form .error {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
 
@@ -1146,7 +1146,6 @@ figure {
 }
 #contact .p-contact__form--item .__item-contents {
   width: 100%;
-  background: white;
   border-radius: 8px;
   position: relative;
 }
@@ -1174,7 +1173,7 @@ figure {
     font-size: 14px;
     letter-spacing: 1.4px;
     padding: 21px;
-    padding-right: 59px;
+    padding-right: 78px;
   }
 }
 #contact .p-contact__form--item .__item-contents svg {
@@ -1188,7 +1187,7 @@ figure {
   height: 100%;
   padding: 22px;
   border-radius: 8px;
-  color: #777;
+  color: #777 !important;
   /* KS TEXT */
   font-family: "A-OTF-UDShinGoPr6N-Regular";
   font-size: 16px;
@@ -1241,8 +1240,7 @@ figure {
   width: 30px;
   height: 15px;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 28px;
   right: 24px;
 }
 @media screen and (max-width: 767px) {
@@ -3586,17 +3584,14 @@ figure {
 #top .p-booth__right--container,
 #top .p-price__right--container {
   max-width: 336px;
-  padding-left: 32px;
-  padding-right: 32px;
   margin: 0 auto;
-  padding-top: 160px;
-  padding-bottom: 160px;
+  padding: 243px 32px;
 }
 @media screen and (max-width: 767px) {
   #top .p-facility__right--container,
   #top .p-booth__right--container,
   #top .p-price__right--container {
-    padding-top: 56px;
+    padding-top: 80px;
     padding-bottom: 80px;
   }
 }
@@ -3611,7 +3606,6 @@ figure {
   line-height: 100%;
   /* 32px */
   letter-spacing: 1.6px;
-  padding-top: 70px;
 }
 @media screen and (max-width: 767px) {
   #top .p-facility__right--container h2,

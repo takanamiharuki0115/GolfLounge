@@ -7,8 +7,8 @@
 ?>
     <main id="news" class="news">
         <section id="news__fv" class="news__fv">
-            <img class="is-pc" src="<?php echo get_template_directory_uri()?>/assets/image/News/FV-PC.png" alt="NEWS">
-            <img class="is-sp" src="<?php echo get_template_directory_uri()?>/assets/image/News/FV-SP.png" alt="NEWS">
+            <img class="is-pc" src="<?php echo get_template_directory_uri()?>/assets/image/News/FV-PC.jpg" alt="NEWS">
+            <img class="is-sp" src="<?php echo get_template_directory_uri()?>/assets/image/News/FV-SP.jpg" alt="NEWS">
             <h1 class="wow fadeInUp">NEWS<small>お知らせ</small></h1>
         </section>
         <section id="news__main" class="news__main">

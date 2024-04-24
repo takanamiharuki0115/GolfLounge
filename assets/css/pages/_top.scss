@@ -269,14 +269,11 @@
 
             &--container {
                 max-width: 336px;
-                padding-left: 32px;
-                padding-right: 32px;
                 margin: 0 auto;
-                padding-top: 160px;
-                padding-bottom: 160px;
+                padding: 243px 32px;
 
                 @include media-sp {
-                    padding-top: 56px;
+                    padding-top: 80px;
                     padding-bottom: 80px;
                 }
 
@@ -289,7 +286,6 @@
                     line-height: 100%;
                     /* 32px */
                     letter-spacing: 1.6px;
-                    padding-top: 70px;
 
                     @include media-sp {
                         font-size: 24px;
