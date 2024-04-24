@@ -68,6 +68,20 @@
                         font-size: 14px;
                         letter-spacing: 1.4px;
                     }
+                    
+                    &--content {
+                        display: flex;
+                        small {
+                            display: block;
+                            font-size: 25px;
+                            line-height: 22px;
+
+                            @include media-sp {
+                                font-size: 22px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
                 }
             }
         }

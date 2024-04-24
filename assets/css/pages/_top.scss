@@ -1,5 +1,3 @@
-
-
 #top {
     .p-fv {
         background-position: center center;
@@ -10,28 +8,32 @@
         &__container {
             position: relative;
             width: 100%;
+            height: calc(100vh - 72px);
+
+            @include media-sp {
+                height: calc(100vh - 64px);
+            }
         }
 
         &__upper {
             position: relative;
+            height: calc((100% - 36px)/2);
+
+            @include media-sp {
+                height: calc((100vh - 22px)/2);
+            }
 
             img {
                 width: 100%;
-                height: 430px;
+                height: 100%;
                 object-fit: cover;
-
-                @include media-sp {
-                    height: 322px;
-                    width: 100%;
-                    object-fit: cover;
-                }
             }
 
             h1 {
                 position: absolute;
                 top: 40%;
                 left: 120px;
-                font-family: A-OTF Ryumin Pr6N;
+                font-family: $font-mincho;
                 font-size: 56px;
                 font-weight: 300;
                 line-height: 72.8px;
@@ -40,7 +42,6 @@
                 color: #CCB77F;
 
                 @include media-sp {
-                    font-family: $font-APOTF;
                     font-size: 28px;
                     font-weight: 300;
                     line-height: 30.8px;
@@ -62,33 +63,39 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            height: 38px;
+            position: relative;
+            z-index: 1;
+            margin-top: -1px;
+
+            @include media-sp {
+                height: 24px;
+            }
 
             &--content {
                 display: flex;
                 gap: 20px;
                 align-items: center;
-                padding-top: 12px;
-                padding-bottom: 12px;
             }
         }
 
         &__bottom {
             position: relative;
+            height: calc((100% - 36px)/2);
+            margin-top: -1px;
+
+            @include media-sp {
+                height: calc((100vh - 22px)/2);
+            }
 
             img {
                 width: 100%;
-                height: 430px;
+                height: 100%;
                 object-fit: cover;
-
-                @include media-sp {
-                    height: 322px;
-                    width: 100%;
-                    object-fit: cover;
-                }
             }
 
             h1 {
-                font-family: A-OTF Ryumin Pr6N;
+                font-family: $font-mincho;
                 font-size: 56px;
                 font-weight: 300;
                 line-height: 72.8px;
@@ -99,7 +106,6 @@
                 color: #CCB77F;
 
                 @include media-sp {
-                    font-family: $font-APOTF;
                     font-size: 28px;
                     font-weight: 300;
                     line-height: 30.8px;
@@ -117,141 +123,114 @@
         }
     }
 
-    .p-aboutus {
-        position: relative;
+    .p-about {
+        background-image: url(../image/top/about.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
         height: 800px;
+        padding-top: 213px;
+        padding-bottom: 164px;
 
         @include media-sp {
             height: 748px;
-        }
-
-        img {
-            width: 100%;
-            height: 800px;
-            object-fit: cover;
-
-            @include media-sp {
-                height: 748px;
-            }
-        }
-
-        .img-cover {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 800px;
-            opacity: 0.4;
-            background: #000;
-            z-index: 1;
-
-            @include media-sp {
-                height: 748px;
-                opacity: 0.6;
-            }
+            padding-top: 144px;
+            padding-bottom: 144px;
         }
 
         &__container {
-            position: absolute;
-            z-index: 2;
-            top: 213px;
-            width: 800px;
-            left: calc(50% - 400px);
+            max-width: 864px;
+            padding-left: 32px;
+            padding-right: 32px;
+            margin: 0 auto;
+        }
+
+        &__ttl {
+            color: var(--KS-WHITE, #F8F8F8);
+            font-family: $font-APOTF;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            /* 32px */
+            letter-spacing: 1.6px;
             text-align: center;
 
-            @include media-pc {
-                width: 700px;
-                left: calc(50% - 350px);
+            @include media-sp {
+                font-size: 24px;
+                letter-spacing: 1.2px;
             }
+
+            .__small {
+                color: var(--KS-RED02, #F22);
+
+                /* KS UNDER TITLE */
+                font-family: $font-APOTF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 100%;
+                /* 14px */
+                letter-spacing: 1.4px;
+                text-align: center;
+
+                @include media-sp {
+                    font-size: 12px;
+                    letter-spacing: 1.2px;
+                }
+            }
+        }
+
+        &__subttl {
+            color: #FFF;
+            text-align: center;
+
+            /* KS H2 */
+            font-family: $font-APOTF;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            /* 48px */
+            letter-spacing: 3.2px;
+            padding-top: 56px;
 
             @include media-sp {
-                top: 144px;
-                width: 311px;
-                left: calc(50% - 150px);
-            }
-
-            h2 {
-                font-family: $font-APOTF;
-                font-size: 32px;
-                font-weight: 400;
-                line-height: 32px;
-                letter-spacing: 0.05em;
-                text-align: center;
-                color: #f8f8f8;
-
-                @include media-sp {
-                    font-size: 24px;
-                    font-weight: 400;
-                    line-height: 24px;
-                    letter-spacing: 0.05em;
-                }
-
-                small {
-                    display: block;
-                    font-family: $font-APOTF;
-                    font-size: 14px;
-                    font-weight: 500;
-                    line-height: 14px;
-                    letter-spacing: 0.1em;
-                    text-align: center;
-                    color: #FF2222;
-                    padding-top: 16px;
-
-                    @include media-sp {
-                        font-size: 12px;
-                        font-weight: 500;
-                        line-height: 12px;
-                        letter-spacing: 0.1em;
-                    }
-                }
-            }
-
-            h3 {
-                font-family: $font-APOTF;
-                font-size: 32px;
-                font-weight: 400;
-                line-height: 48px;
-                letter-spacing: 0.1em;
-                text-align: center;
-                color: #fff;
-                padding-top: 56px;
-                white-space: nowrap;
-
-                @include media-pc {
-                    white-space: unset;
-                }
-
-                @include media-sp {
-                    font-size: 24px;
-                    font-weight: 400;
-                    line-height: 36px;
-                    letter-spacing: 0.1em;
-                    text-align: center;
-                }
-            }
-
-            p {
-                //styleName: KS TEXT;
-                font-family: $font-APOTF;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 27.2px;
-                letter-spacing: 0.1em;
-                text-align: left;
-                color: #fff;
-                padding-top: 32px;
-
-                @include media-sp {
-                    font-size: 14px;
-                    font-weight: 400;
-                    line-height: 23.8px;
-                    letter-spacing: 0.1em;
-                }
-            }
-
-            a {
-                padding: 12px 16px;
+                font-size: 24px;
                 letter-spacing: 2.4px;
-                margin: 56px auto 80px;
+            }
+        }
+
+        &__contents {
+            color: var(--KS-TEXT, rgba(248, 248, 248, 0.80));
+
+            /* KS TEXT */
+            font-family: $font-APOTF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 170%;
+            /* 27.2px */
+            letter-spacing: 1.6px;
+            padding-top: 32px;
+            padding-bottom: 56px;
+
+            @include media-sp {
+                font-size: 14px;
+                letter-spacing: 1.4px;
+            }
+        }
+
+        &__more {
+            margin: 0 auto;
+        }
+
+        a {
+            padding: 12px 16px;
+
+            @include media-sp {
+                padding: 16px 32px;
             }
         }
     }
@@ -260,93 +239,99 @@
     .p-booth,
     .p-price {
         width: 100%;
-        height: 800px;
         display: flex;
 
         @include media-sp {
-            flex-direction: column;
-            height: auto;
+            flex-wrap: wrap;
         }
 
         &__left {
             width: 66%;
-            position: relative;
-
-            @include media-pc {
-                width: 60%;
-            }
 
             @include media-sp {
                 width: 100%;
-                height: 313px;
             }
 
             img {
-                width: 100%;
-                height: 800px;
-                object-fit: cover;
-
-                @include media-sp {
-                    height: 313px;
-                    object-fit: cover;
-                }
+                height: 100%;
             }
         }
 
         &__right {
             width: 34%;
             background-color: #111111;
-
-            @include media-pc {
-                width: 40%;
-            }
+            display: flex;
+            align-items: center;
 
             @include media-sp {
                 width: 100%;
             }
 
             &--container {
-                width: 272px;
-                margin: 200px auto 0;
+                max-width: 336px;
+                padding-left: 32px;
+                padding-right: 32px;
+                margin: 0 auto;
+                padding-top: 160px;
+                padding-bottom: 160px;
 
                 @include media-sp {
-                    margin-top: 56px;
-                    width: 311px;
+                    padding-top: 56px;
+                    padding-bottom: 80px;
                 }
 
                 h2 {
+                    color: var(--KS-WHITE, #F8F8F8);
                     font-family: $font-APOTF;
                     font-size: 32px;
+                    font-style: normal;
                     font-weight: 400;
-                    line-height: 32px;
-                    letter-spacing: 0.05em;
-                    color: #F8F8F8;
-                    text-align: left;
+                    line-height: 100%;
+                    /* 32px */
+                    letter-spacing: 1.6px;
+                    padding-top: 70px;
+
+                    @include media-sp {
+                        font-size: 24px;
+                        letter-spacing: 1.2px;
+                    }
 
                     small {
-                        display: block;
-                        padding-top: 16px;
-                        color: #FF2222;
+                        color: var(--KS-RED02, #F22);
+
+                        /* KS UNDER TITLE */
+                        font-family: $font-APOTF;
                         font-size: 14px;
+                        font-style: normal;
                         font-weight: 500;
-                        line-height: 14px;
-                        letter-spacing: 0.1em;
-                        text-align: left;
+                        line-height: 100%;
+                        /* 14px */
+                        letter-spacing: 1.4px;
+
+                        @include media-sp {
+                            font-size: 12px;
+                            letter-spacing: 1.2px;
+                        }
                     }
                 }
 
                 p {
                     padding-top: 48px;
+                    padding-bottom: 48px;
+                    color: var(--KS-WHITE, #F8F8F8);
+                    font-family: $font-APOTF;
                     font-size: 16px;
+                    font-style: normal;
                     font-weight: 400;
-                    line-height: 27.2px;
-                    letter-spacing: 0.1em;
-                    text-align: left;
-                    color: #F8F8F8;
-                }
+                    line-height: 170%;
+                    /* 27.2px */
+                    letter-spacing: 1.6px;
 
-                a {
-                    margin: 56px 0 80px;
+                    @include media-sp {
+                        font-size: 16px;
+                        padding-top: 32px;
+                        padding-bottom: 32px;
+                    }
                 }
             }
         }
@@ -354,7 +339,7 @@
 
     .p-booth {
         @include media-sp {
-            flex-direction: column-reverse !important;
+            flex-wrap: wrap-reverse !important;
         }
     }
 
@@ -421,6 +406,7 @@
                         letter-spacing: 0.1em;
                         text-align: left;
                         color: #FF2222;
+                        font-family: $font-APOTF;
                     }
                 }
 
@@ -443,20 +429,19 @@
     }
 
     .p-news {
-        padding: 240px 160px;
+        padding-top: 240px;
+        padding-bottom: 240px;
         background-color: #111;
-
-        @include media-pc {
-            padding: 240px 32px;
-        }
 
         @include media-sp {
             padding: 120px 32px;
         }
 
         &__container {
-            width: 100%;
-            text-align: left;
+            max-width: 1184px;
+            padding-left: 32px;
+            padding-right: 32px;
+            margin: 0 auto;
 
             h2 {
                 font-family: $font-APOTF;
@@ -470,6 +455,7 @@
                 margin: auto;
 
                 small {
+                    font-family: $font-APOTF;
                     display: block;
                     width: max-content;
                     margin: auto;
@@ -485,85 +471,90 @@
 
             ul {
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 padding-top: 80px;
                 gap: 40px;
 
                 @include media-sp {
-                    flex-direction: column;
+                    flex-wrap: wrap;
                 }
 
-                li {
-                    img {
-                        height: 258px;
-                        object-fit: cover;
+                a {
+                    max-width: calc((100% - 160px) / 3);
+                    width: 100%;
+
+                    @include media-sp {
+                        max-width: 100%;
                     }
 
-                    span {
-                        font-family: $font-APOTF;
-                        font-size: 10px;
-                        font-weight: 400;
-                        line-height: 10px;
-                        letter-spacing: 0.1em;
-                        text-align: left;
-                        padding-top: 16px;
-                        display: block;
-                        color: #999999;
-                    }
-
-                    h3 {
-                        font-family: $font-APOTF;
-                        font-size: 24px;
-                        font-weight: 400;
-                        line-height: 36px;
-                        letter-spacing: 0.1em;
-                        text-align: left;
-                        padding-top: 16px;
-                        color: #DDDDDD;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 2;
-                        -webkit-box-orient: vertical;
-                        overflow: hidden;
-                    }
-
-                    p {
-                        font-family: $font-APOTF;
-                        font-size: 16px;
-                        font-weight: 400;
-                        line-height: 27.2px;
-                        letter-spacing: 0.1em;
-                        text-align: left;
-                        padding-top: 16px;
-                        color: #999999;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 2;
-                        -webkit-box-orient: vertical;
-                        overflow: hidden;
-                    }
-
-                    a {
-                        font-family: $font-APOTF;
-                        display: flex;
-                        align-items: center;
-                        font-size: 16px;
-                        font-weight: 500;
-                        line-height: 16px;
-                        letter-spacing: 0.1em;
-                        text-align: left;
-                        color: #DDDDDD;
-                        margin-top: 40px;
-                        transition: 0.3s;
-                        
-                        &:hover {
-                            text-shadow: 0 0 10px white;
+                    li {
+                        img {
+                            height: 258px;
+                            object-fit: cover;
                         }
 
-                        @include media-sp {
-                            float: right;
+                        small {
+                            font-family: $font-APOTF;
+                            font-size: 10px;
+                            font-weight: 400;
+                            line-height: 10px;
+                            letter-spacing: 0.1em;
+                            text-align: left;
+                            padding-top: 16px;
+                            display: block;
+                            color: #999999;
                         }
 
-                        .after {
-                            margin-left: 12px;
+                        h3 {
+                            font-family: $font-APOTF;
+                            font-size: 24px;
+                            font-weight: 400;
+                            line-height: 36px;
+                            letter-spacing: 0.1em;
+                            text-align: left;
+                            padding-top: 16px;
+                            color: #DDDDDD;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                        }
+
+                        p {
+                            font-family: $font-APOTF;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 27.2px;
+                            letter-spacing: 0.1em;
+                            text-align: left;
+                            padding-top: 16px;
+                            color: #999999;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                        }
+
+                        span {
+                            font-family: $font-APOTF;
+                            display: flex;
+                            align-items: center;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 16px;
+                            letter-spacing: 0.1em;
+                            text-align: left;
+                            color: #DDDDDD;
+                            margin-top: 40px;
+                            transition: 0.3s;
+
+                            @include media-sp {
+                                float: right;
+                            }
+
+                            .after {
+                                margin-left: 12px;
+                            }
                         }
                     }
                 }
@@ -638,6 +629,7 @@
                     }
 
                     small {
+                        font-family: $font-APOTF;
                         display: block;
                         padding-top: 16px;
                         color: rgba(248, 248, 248, 0.8);
