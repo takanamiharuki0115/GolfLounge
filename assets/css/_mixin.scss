@@ -16,7 +16,7 @@
   }
   
   @mixin media-sp {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       @content;
     }
   }
@@ -28,35 +28,34 @@
   }
   
   @mixin media-is-pc {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
       @content;
     }
   }
 
   .l-common{
-    width: calc(1440px + 40px);
+    max-width: 1480px;
     max-width: 100%;
     padding-left: 20px;
     padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     position: relative;
-    @include media-sp(){
+    @include media-sp{
         padding-left: 15px;
         padding-right: 15px;
     }
   }
 
-  .is-sp{
-    display: none;
-    @include media-sp(){
-        display: block;
+  .is-pc{
+    display: block;
+    @include media-sp {
+        display: none !important;
     }
   }
 
-  .is-pc{
-    display: block;
-    @include media-sp(){
-        display: none;
+  .is-sp{
+    display: none !important;
+    @include media-sp {
+        display: block !important;
     }
   }

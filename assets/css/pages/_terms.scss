@@ -1,5 +1,6 @@
 #terms {
     .p-terms {
+        background-color: #ddd;
         padding-top: 200px;
         padding-bottom: 240px;
         @include media-sp {
@@ -17,7 +18,7 @@
 
             /* KS H2 */
             font-family: $font-APOTF;
-            font-size: 24px;
+            font-size: 32px;
             font-style: normal;
             font-weight: 400;
             line-height: 150%; /* 48px */

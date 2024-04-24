@@ -7,6 +7,7 @@
 @import './pages/terms';
 @import './pages/privacy';
 @import './pages/contact';
+@import './pages/contact-confirm';
 @import './pages/access';
 @import './pages/news';
 @import './pages/news_detail';
@@ -19,22 +20,6 @@
 @import './pages/facility';
 @import './pages/price';
 
-.pc-only {
-    display: block;
-
-    @include media-sp {
-        display: none !important;
-    }
-}
-
-.sp-only {
-    display: none !important;
-
-    @include media-sp {
-        display: block !important;
-    }
-}
-
 .arrow {
     width: 96px;
     height: 96px;
@@ -44,8 +29,8 @@
     border: 1px solid rgba(248, 248, 248, 0.3);
     border-radius: 50px;
     transition: 0.3s;
-    background: linear-gradient(90deg, rgba(248, 248, 248, 0.3) 50%, transparent 0);
-    background-position: 100% 100%;
+    background: linear-gradient(90deg, rgba(248, 248, 248, 0.8) 50%, transparent 0);
+    background-position: calc(100% - 1px) 100%;
     background-size: 200% 100%;
     background-repeat: no-repeat;
 
@@ -59,30 +44,6 @@
     background-position: 0 0;
 }
 
-.gray-arrow {
-    width: 96px;
-    height: 96px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #333;
-    border-radius: 50px;
-    transition: 0.3s;
-    background: linear-gradient(90deg, transparent 50%, #333 0);
-    background-position: 100% 100%;
-    background-size: 200% 100%;
-    background-repeat: no-repeat;
-
-    @include media-pc-sm {
-        width: 72px;
-        height: 72px;
-    }
-}
-
-.gray-arrow:hover {
-    background-position: 0 0;
-}
-
 .main-btn {
     display: flex;
     padding: 16px 32px;
@@ -91,8 +52,8 @@
     align-items: center;
     justify-content: center;
     transition: 0.3s;
-    background: linear-gradient(90deg, rgba(248, 248, 248, 0.5) 50%, transparent 0);
-    background-position: 100% 100%;
+    background: linear-gradient(90deg, rgba(248, 248, 248, 0.8) 50%, transparent 0);
+    background-position: calc(100% - 5px) 100%;
     background-size: 200% 100%;
     background-repeat: no-repeat;
     white-space: nowrap;
@@ -102,10 +63,11 @@
     span {
         color: #f8f8f8;
         font-size: 16px;
+        line-height: 16px;
         letter-spacing: 1.6px;
-        font-weight: 400px;
-        font-family: "A P-OTF UD Shin Go Pr6N";
+        font-weight: 400;
         text-align: center;
+        font-family: $font-APOTF;
     }
 
     svg {
@@ -114,7 +76,7 @@
 }
 
 .main-btn-light {
-    border: 1px solid rgba(17, 17, 17, 0.30);
+    border: 1px solid rgba(17, 17, 17, 0.8);
     span {
         color: #111;
     }
@@ -123,3 +85,4 @@
 .main-btn:hover {
     background-position: 0 0;
 }
+

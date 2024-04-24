@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600;700&family=Kiwi+Maru:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700');
 
-
 @font-face {
     font-family: "SOURCEHANSANSJP-BOLD";
     src: url(../fonts/SOURCEHANSANSJP-BOLD_0.OTF);
@@ -22,10 +21,22 @@
 @font-face {
     font-family: "A-OTF-UDShinGoPr6N-Regular";
     src: url(../fonts/A-OTF-UDShinGoPr6N-Regular.otf);
-  }
+}
 
-$font-APOTF:'A-OTF-UDShinGoPr6N-Regular';
-$font-kiwi:'Kiwi Maru', serif;
+@font-face {
+    font-family: "A-OTF-UDShinGoPr6N-Bold";
+    src: url(../fonts/A-OTF-UDShinGoPr6N-Bold.otf);
+}
+
+@font-face {
+    font-family: "A-OTF A1 Mincho Std";
+    src: url(../fonts/A-OTF-A1MinchoStd-Bold.otf);
+}
+
+$font-mincho: "A-OTF A1 Mincho Std";
+$font-APOTF: 'A-OTF-UDShinGoPr6N-Regular';
+$font-APOTFBOLD: 'A-OTF-UDShinGoPr6N-Bold';
+$font-kiwi: 'Kiwi Maru', serif;
 $font-noto: 'Noto Sans JP', sans-serif;
 
 

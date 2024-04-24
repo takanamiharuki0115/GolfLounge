@@ -1,14 +1,15 @@
-#news {
-    .news {
+#news {  
+    .news {    
         &__fv {
             width: 100%;
             height: 480px;
             position: relative;
-            background-color: #666;
+            display: flex;
+            align-items: center;
 
             img {
                 width: 100%;
-                height: 480px;
+                height: 100%;
                 object-fit: cover;
             }
 
@@ -19,11 +20,11 @@
                 line-height: 32px;
                 letter-spacing: 0.05em;
                 position: absolute;
-                top: 35%;
-                left: 8%;
+                left: 120px;
                 color: #F8F8F8;
 
                 @include media-sp {
+                    left: 32px;
                     font-family: $font-APOTF;
                     font-size: 24px;
                     font-weight: 400;
@@ -56,129 +57,120 @@
             background-color: #ddd;
             color: #111;
             position: relative;
-
+            padding-top: 240px;
+            padding-bottom: 160px;
+            @include media-sp {
+                padding-top: 120px;
+                padding-bottom: 80px;
+            }
             .container {
-                max-width: 1440px;
+                max-width: 1182px;
                 margin-left: auto;
                 margin-right: auto;
-                padding: 240px 160px 160px;
-                display: grid;
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-                gap: 96px 40px;
-
-                @include media-pc {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 40px;
-                }
-
-                @include media-sp {
-                    padding: 120px 32px 40px;
-                }
-
+                padding-left: 32px;
+                padding-right: 32px;
+                display: flex;
+                flex-wrap: wrap;                
+                gap: 40px; 
                 .item {
+                    width: calc((100% - 80px) / 3);
                     @include media-sp {
                         width: 100%;
                     }
-
-                    img {
-                        max-width: 347px;
-                        margin-left: auto;
-                        margin-right: auto;
-                        width: 100%;
-
+                    figure {
+                        height: 258px;
                         @include media-sp {
-                            max-width: 311px;
+                            height: 232px;
+                        }
+                        img {
+                            height: 100%;
                         }
                     }
-
-                    label {
-                        color: #999;
+                    .news-date {
+                        color: var(--KS-GLAY02, #999);
+                        text-align: center;
+                        font-family: $font-APOTF;
                         font-size: 10px;
-                        font-weight: 400;
-                        margin-top: 16px;
-                        margin-bottom: 16px;
-
+                        font-style: normal;
+                        line-height: 1.5; /* 10px */
+                        letter-spacing: 1px;
+                        padding-bottom: 16px;
                         @include media-sp {
-                            font-size: 12px;
+                            letter-spacing: 1.2px;
                         }
                     }
-
-                    h3 {
+                    .news-ttl {
+                        color: var(--KS-BLACK, #111);
+                        font-family: $font-APOTF;
                         font-size: 24px;
+                        font-style: normal;
                         font-weight: 400;
-                        line-height: 150%;
+                        line-height: 150%; /* 36px */
                         letter-spacing: 2.4px;
+                        padding-bottom: 16px;
                         @include media-sp {
                             font-size: 20px;
                             letter-spacing: 2px;
                         }
                     }
-
-                    p {
-                        color: #333;
+                    .news-contents {
+                        color: var(--KS-BLACK03, #333);    
+                        font-family: $font-APOTF;
                         font-size: 16px;
-                        line-height: 170%;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 170%; /* 27.2px */
                         letter-spacing: 1.6px;
-                        margin-top: 16px;
-                        max-height: 50px;
-                        overflow: hidden;
-                        -webkit-box-orient: vertical;
+                        overflow: hidden;                        
                         display: -webkit-box;
+                        -webkit-box-orient: vertical;
                         text-overflow: ellipsis;
                         -webkit-line-clamp: 2;
-
+                        height: 50px;                       
                         @include media-sp {
                             font-size: 14px;
-                            letter-spacing: 1.4px;
+                            letter-spacing: 1.4px;                           
                         }
                     }
-
-                    a {
-                        color: #111;
-                        width: max-content;
-                        padding-left: 10px;
+                    .__more-btn {
+                        color: var(--KS-BLACK02, #111);
+                        text-align: center;
+                        font-family: $font-APOTF;
                         font-size: 16px;
+                        font-style: normal;
                         font-weight: 500;
+                        line-height: 100%; /* 16px */
                         letter-spacing: 1.6px;
-                        margin-top: 40px;
                         display: flex;
                         align-items: center;
-                        margin-left: auto;
-                        transition: 0.3s;
-                        background: linear-gradient(90deg, rgba(248, 248, 248, 1) 50%, transparent 0);
-                        background-position: 100% 100%;
-                        background-size: 200% 100%;
-                        background-repeat: no-repeat;
-                        cursor: pointer;
-                        
-                        &:hover {
-                            background-position: 0 0;
+                        gap: 12px; 
+                        padding-top: 40px;                        
+                        @include media-sp {
+                            padding-top: 32px;
+                            width: max-content;
+                            margin-left: auto;
                         }
-
                         .bar {
                             background-color: #F22;
                             width: 32px;
                             height: 1px;
-                            margin-left: 12px;
                         }
                     }
                 }
             }
-
         }
-
-        &__btn {
-            padding-bottom: 240px;
+        &__btn {          
             background-color: #ddd;
-
+            padding-bottom: 240px;
+            @include media-sp {
+                padding-bottom: 120px;
+            }
             a {
                 margin-left: auto;
                 margin-right: auto;
-
-                svg {
-                    margin-left: 12px;
-                }
+                display: flex;
+                align-items: center;
+                gap: 12px;
             }
         }
     }
