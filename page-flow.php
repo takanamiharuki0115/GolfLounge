@@ -4,8 +4,8 @@
 
     <main id="flow" class="flow">
         <section id="flow__fv" class="flow__fv">
-            <img class="is-pc" src="<?php echo get_template_directory_uri()?>/assets/image/Flow/FV-PC.png" alt="Facility">
-            <img class="is-sp" src="<?php echo get_template_directory_uri()?>/assets/image/Flow/FV-SP.png" alt="Facility">
+            <img class="is-pc" src="<?php echo get_template_directory_uri()?>/assets/image/Flow/FV-PC.jpg" alt="Facility">
+            <img class="is-sp" src="<?php echo get_template_directory_uri()?>/assets/image/Flow/FV-SP.jpg" alt="Facility">
             <h1 class="wow fadeInUp">FLOW<small>ご利用の流れ</small></h1>
         </section>
         <section id="flow__main" class="flow__main">

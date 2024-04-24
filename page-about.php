@@ -26,9 +26,9 @@
         <section class="about-us__electricity" id="about-us__electricity">
             <div class="container">
                 <div class="content">
-                    <h2 class="wow fadeInUp">SDGs 電気は太陽光でまかなっているエコ</h2>
+                    <h2 class="wow fadeInUp">太陽光を活用しているSDGsを意識した店舗</h2>
                     <p class="wow fadeInUp">
-                        「私たちの環境への取り組みは、SDGsの目標にも繋がっています。当スタジオの全ての電力を太陽光発電でまかなっています。エコなエネルギーの活用により、私たちのビジネス活動も持続可能で環境に優しいものとなっています。
+                        運営会社であるKSエンジニアリングは太陽光システムを取り扱っており、当店舗の電力の一部は太陽光で賄っております。当社だからこそできるSDGsを意識した店舗運営を心がけていきます。
                     </p>
                 </div>
                 <img class="is-pc wow fadeInUp" src="<?php echo get_template_directory_uri()?>/assets/image/AboutUs/Electricity-PC.jpg"

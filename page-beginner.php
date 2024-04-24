@@ -4,8 +4,8 @@
 
     <main id="beginner" class="beginner">
         <section id="beginner__fv" class="beginner__fv">
-            <img class="is-pc" src="<?php echo get_template_directory_uri()?>/assets/image/Beginner/FV-PC.png" alt="Beginner">
-            <img class="is-sp" src="<?php echo get_template_directory_uri()?>/assets/image/Beginner/FV-SP.png" alt="Beginner">
+            <img class="is-pc" src="<?php echo get_template_directory_uri()?>/assets/image/Beginner/FV-PC.jpg" alt="Beginner">
+            <img class="is-sp" src="<?php echo get_template_directory_uri()?>/assets/image/Beginner/FV-SP.jpg" alt="Beginner">
             <h1 class="wow fadeInUp">BEGINNER<small>初めての方</small></h1>
         </section>
         <section id="beginner__main" class="beginner__main">

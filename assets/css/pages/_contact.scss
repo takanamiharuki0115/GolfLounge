@@ -158,7 +158,6 @@
 
                 .__item-contents {
                     width: 100%;
-                    background: white;
                     border-radius: 8px;
                     position: relative;
 
@@ -184,7 +183,7 @@
                             font-size: 14px;
                             letter-spacing: 1.4px;
                             padding: 21px;
-                            padding-right: 59px;
+                            padding-right: 78px;
                         }
                     }
 
@@ -200,7 +199,7 @@
                         height: 100%;
                         padding: 22px;
                         border-radius: 8px;
-                        color: #777;
+                        color: #777 !important;
 
                         /* KS TEXT */
                         font-family: $font-APOTF;
@@ -255,9 +254,9 @@
                         width: 30px;
                         height: 15px;
                         position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
+                        top: 28px;
                         right: 24px;
+
                     }
 
                     @include media-sp {

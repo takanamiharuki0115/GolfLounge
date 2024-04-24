@@ -575,10 +575,10 @@
 }
 
 .mw_wp_form .error {
-    font-size: 14px;
+    font-size: 14px !important;
 
     @include media-sp {
-        font-size: 12px;
+        font-size: 12px !important;
     }
 }
 

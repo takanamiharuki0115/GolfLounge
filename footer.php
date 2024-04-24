@@ -2,7 +2,7 @@
         <a href="https://ksgolflounge.hacomono.jp/reserve/schedule/1/1/?trial=true">
             <section class="p-reservation" id="reservation">
                 <img class="is-pc" src="<?php echo get_template_directory_uri()?>/assets/image/top/Reservation-PC.jpg" alt="reservation">
-                <img class="is-sp" src="<?php echo get_template_directory_uri()?>/assets/image/top/Reservation-SP.png" alt="reservation">
+                <img class="is-sp" src="<?php echo get_template_directory_uri()?>/assets/image/top/Reservation-SP.jpg" alt="reservation">
                 <div class="p-reservation__container">
                     <h2 class="wow fadeInUp">RESERVATION<small>ご予約</small></h2>
                     <div class="link wow fadeInUp">
